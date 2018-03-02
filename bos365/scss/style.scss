@@ -2,7 +2,9 @@
 @import "default-variables";
 
 // Bootstrap Framework.
-@import '../bootstrap/assets/stylesheets/bootstrap';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
 // Base-theme overrides.
 @import 'overrides';
+
+.lozzi { display:block}
