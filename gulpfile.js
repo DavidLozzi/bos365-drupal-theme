@@ -14,5 +14,5 @@ function compileCss(){
         .pipe(sass().on("error", notify.onError(function (error) {
                 return "Error: " + error.message;
             })))
-        .pipe(gulp.dest('./build/css'))
+        .pipe(gulp.dest('./bos365/css'))
 }
