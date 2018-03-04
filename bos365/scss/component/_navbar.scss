@@ -44,6 +44,16 @@ body {
     }
   }
 }
+.navbar {
+  border: 0px;
+  @media (min-width: $grid-float-breakpoint) {
+    border-radius: 0px;
+  }
+}
+.navbar-default {
+  font-size:      $font-size-base;
+  text-transform: uppercase;
+}
 .navbar.container {
   @media #{$tablet} {
     max-width: (($container-sm - $grid-gutter-width));
