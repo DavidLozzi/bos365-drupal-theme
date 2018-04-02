@@ -63,6 +63,7 @@
     %}
     <div class="jumbotron">
     <div class="{{ container }}">
+      <div class="col-lg-12 col-md-12 col-xs-12">
     <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
 
       <div class="navbar-header">
@@ -79,13 +80,15 @@
         {% endif %}
       </div>
 
+      <div class="mobile-subscr"><a href="/drupal/newsletter">Subscribe</a></div>
+
       {# Navigation (collapsible) #}
       {% if page.navigation_collapsible %}
         <div id="navbar-collapse" class="navbar-collapse collapse">
           {{ page.navigation_collapsible }}
         </div>
       {% endif %}
-    </header>
+    </header></div>
         </div>
       </div> 
   {% endblock %}
@@ -93,13 +96,15 @@
 
 {# Main #}
 {% block main %}
+
+  {# <div role="main" class="main-container {{ container }} js-quickedit-main-content"> #}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
       {# Header #}
       {% if page.header %}
         {% block header %}
-          <div class="col-sm-12" role="heading">
+          <div class="col-lg-12 col-md-12 col-sm-12" role="heading">
             {{ page.header }}
           </div>
         {% endblock %}
@@ -160,8 +165,11 @@
 
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
+    <footer class="footer {{ container-fluid }}" role="contentinfo">
+      <div class="container">
       {{ page.footer }}
+    </div>
     </footer>
+    <div class="footer-bottom-border">&nbsp;</div>
   {% endblock %}
 {% endif %}
