@@ -1,0 +1,39 @@
+
+
+
+.footer{
+
+		background-color: #2d2522;
+	    font-family: SegoeUI;
+	    font-size: 18px;
+	    font-weight: 300;
+	    padding: 60px 0px;
+	    margin: 0px;
+	    color: $btn-primary-color;
+	.region.region-footer{
+		
+
+	 span {
+	    	color: $btn-primary-color;
+    	}
+
+	.info-links ul li {
+	    display: inline-block;
+	    padding: 0px 15px;
+	    margin: 0px;
+	    float: right;
+	    color: $btn-primary-color;
+	}
+
+}
+
+}
+li.mobile-enable {
+    display: none;
+}
+
+.footer-bottom-border {
+  width: 100%;
+  height: 10px;
+  background-color: $brand-tritary;
+}
