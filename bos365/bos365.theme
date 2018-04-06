@@ -6,3 +6,10 @@
  *
  * Place your custom PHP code in this file.
  */
+
+ 
+function bos365_preprocess_block(&$variables) {
+  if (in_array($variables['elements']['#id'], array('views_block__slider_block_1'))) {
+    $variables['attributes']['class'][] = 'homepage-slider-block';
+  }
+}

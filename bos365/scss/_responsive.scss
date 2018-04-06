@@ -1,6 +1,6 @@
 html *
 {
-   font-family: SegoeUI;
+   font-family: $font-family-sans-serif;
   color: $gray-base;
 }
 
@@ -87,9 +87,7 @@ ul li.mobile-enable {
     z-index: 9999;
 }
 
-.region.region-navigation {
-    margin-left: 30%;
-}
+
 ul.menu.menu--main.nav.navbar-nav{
 	display:none;
 }
@@ -111,7 +109,7 @@ ul.menu.menu--main.nav.navbar-nav{
 }
 
 .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content{
-	    width: 320px;
+	    width: 100%;
 	    img{
 	    	margin: 40px 0px;
 	    }
