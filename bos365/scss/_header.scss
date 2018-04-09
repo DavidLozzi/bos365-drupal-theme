@@ -55,10 +55,10 @@ a.logo{
 }
 
 
-.block-views-blockslider-block-1 {
+.homepage-slider-block {
     width: 100%;
     //margin: 20px 154px;
-    padding: 58px 0px;
+    padding: 58px 0px 0px 200px;
     text-transform: capitalize;
     .form-group{
 		.view-slider{
@@ -78,83 +78,96 @@ a.logo{
 					}
 				}
 	       }
-	       .views-field-title-1 .field-content{
-	       		font-family: $font-family-sans-serif;
-				font-size: 32px;
-				font-weight: 300;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: normal;
-				letter-spacing: -0.8px;
-				text-align: center;
-				color: #ffffff;
+	       .bos365-slider-container{
+
+
+				.speaker-logo-align{
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+				}
+
+	       		.session-title{
+	       			font-family: $font-family-sans-serif;
+					font-size: 32px;
+					font-weight: 300;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: -0.8px;
+					text-align: center;
+					color: #ffffff;
+	       		}
+
+	       		.slider-speaker{
+		       		text-align:left;
+		       		float:left;
+		       		padding:20px;
+			       .label{
+						font-family: $font-family-sans-serif;
+						font-size: 13px;
+						font-weight: bold;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: -0.3px;
+						text-align: left;
+						color: #ffffff;
+						text-transform:uppercase;
+						padding:5px;
+			       	} 
+			       	.title{
+			 			font-family: $font-family-sans-serif;
+						font-size: 20px;
+						font-weight: 300;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: -0.5px;
+						text-align: left;
+						color: #ffffff;
+						padding:5px;
+					}
+		       	}
+		       	.slider-sponsor-logo{
+					width: 150px;
+					height: 80px;
+					background-color: #ffffff;
+					border: solid 1px #ffffff;
+					float:left;
+
+					img{
+						height: 24.9px;
+						margin-top:28px;
+					}
+
+				}
+				.slider-more-details {
+					width: 180px;
+					height: 50px;
+					border-radius: 3px;
+					border: solid 1px #ffffff;
+					margin: auto;
+					padding-top:10px;
+					padding-bottom:13px;
+
+					a{
+						color: #ffff;
+						display: block;
+						text-align: center;
+					}
+				}
 	       }
-	       .views-field-field-logo{
-	       	float:left;
-	       }
-	       .views-field-field-logo .field-content{
-				width: 150px;
-				height: 80px;
-				background-color: #ffffff;
-				border: solid 1px #ffffff;
+	       
 
-	       }
-	       .views-field-field-logo .field-content img{
-	 			height: 24.9px;
-	 			margin-top:28px;
-			}
-
-
-			.views-field-title-1{
-				margin-bottom:20px;
-			}
-
-	       	.views-field-title{
+	       /* 	.views-field-title{
 	       		float: left;
     			text-align: left;
     			display:block;
     			padding:20px;
-	       	}
-	       .views-field-title .views-label-title{
-				font-family: $font-family-sans-serif;
-				font-size: 13px;
-				font-weight: bold;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: normal;
-				letter-spacing: -0.3px;
-				text-align: center;
-				color: #ffffff;
-				text-transform:uppercase;
-	       	} 
-	       	.views-field-title .field-content {
-	 			font-family: $font-family-sans-serif;
-				font-size: 20px;
-				font-weight: 300;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: normal;
-				letter-spacing: -0.5px;
-				text-align: center;
-				color: #ffffff;
-			}
-
-			.views-field-view-node .field-content {
-				width: 180px;
-	    		height: 50px;
-	    		border-radius: 3px;
-	    		border: solid 1px #ffffff;
-	    		margin: auto;
-	    		padding-top:10px;
-	    		padding-bottom:13px;
-
-	    		a{
-	    			color: #ffff;
-	    			display: block;
-	    			text-align: center;
-	    		}
-			}
-			
+	       	} */
 		}
 	}
 }

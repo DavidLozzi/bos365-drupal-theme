@@ -6427,21 +6427,22 @@ p:last-child,
     margin-top: 0; }
 
 html * {
-  font-family: SegoeUI;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000; }
 
 .navbar-header, .navbar-nav {
-  float: none; }
+  float: none;
+  height: auto; }
 
 .navbar {
-  margin-bottom: 0px;
-  max-height: 74px; }
+  margin-bottom: 0px; }
   .navbar .navbar-collapse {
     display: none !important; }
 
 .navbar-header {
   width: 100%;
-  height: 74px; }
+  height: auto;
+  float: left; }
 
 .mobile-subscr {
   display: none; }
@@ -6468,8 +6469,94 @@ a.logo {
   width: 113px;
   height: 70px; }
 
+.homepage-slider-block {
+  width: 100%;
+  padding: 58px 0px 0px 200px;
+  text-transform: capitalize; }
+  .homepage-slider-block .form-group .view-slider {
+    /* 	.views-field-title{
+	       		float: left;
+    			text-align: left;
+    			display:block;
+    			padding:20px;
+	       	} */ }
+    .homepage-slider-block .form-group .view-slider .view-content {
+      text-align: center;
+      width: 100%; }
+      .homepage-slider-block .form-group .view-slider .view-content p {
+        color: #fff; }
+      .homepage-slider-block .form-group .view-slider .view-content .views_slideshow_cycle_teaser_section {
+        margin: auto;
+        background-color: #333333; }
+        .homepage-slider-block .form-group .view-slider .view-content .views_slideshow_cycle_teaser_section .views_slideshow_slide {
+          margin: auto;
+          background-color: #333333; }
+    .homepage-slider-block .form-group .view-slider .bos365-slider-container .speaker-logo-align {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .homepage-slider-block .form-group .view-slider .bos365-slider-container .session-title {
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 32px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -0.8px;
+      text-align: center;
+      color: #ffffff; }
+    .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-speaker {
+      text-align: left;
+      float: left;
+      padding: 20px; }
+      .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-speaker .label {
+        font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.3px;
+        text-align: left;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 5px; }
+      .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-speaker .title {
+        font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.5px;
+        text-align: left;
+        color: #ffffff;
+        padding: 5px; }
+    .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-sponsor-logo {
+      width: 150px;
+      height: 80px;
+      background-color: #ffffff;
+      border: solid 1px #ffffff;
+      float: left; }
+      .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-sponsor-logo img {
+        height: 24.9px;
+        margin-top: 28px; }
+    .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-more-details {
+      width: 180px;
+      height: 50px;
+      border-radius: 3px;
+      border: solid 1px #ffffff;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 13px; }
+      .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-more-details a {
+        color: #ffff;
+        display: block;
+        text-align: center; }
+
 html * {
-  font-family: SegoeUI;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000; }
 
 .main-container #block-ourmission {
@@ -6610,7 +6697,7 @@ html * {
 
 .footer {
   background-color: #2d2522;
-  font-family: SegoeUI;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 300;
   padding: 60px 0px;
@@ -6634,7 +6721,7 @@ li.mobile-enable {
   background-color: #e43f01; }
 
 html * {
-  font-family: SegoeUI;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000; }
 
 /*---------mobile --------------*/
@@ -6687,8 +6774,6 @@ html * {
     position: absolute;
     display: inline-block;
     z-index: 9999; }
-  .region.region-navigation {
-    margin-left: 30%; }
   ul.menu.menu--main.nav.navbar-nav {
     display: none; }
   .navbar-collapse {
@@ -6703,7 +6788,7 @@ html * {
     margin-top: 20px;
     float: none; }
   .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content {
-    width: 320px; }
+    width: 100%; }
     .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content img {
       margin: 40px 0px; }
   .mobile-subscr {
