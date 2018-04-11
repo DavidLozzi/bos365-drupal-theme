@@ -1,6 +1,6 @@
 html *
 {
-   font-family: $font-family-sans-serif;
+   font-family: $font-family-segoe;
   color: $gray-base;
 }
 
@@ -9,6 +9,8 @@ html *
 	float :none;
 	height:auto;
 }
+
+
 
 .navbar{
 	margin-bottom:0px;
@@ -54,43 +56,46 @@ a.logo{
 	height: 70px;
 }
 
+.header-background {
+  width: 1440px;
+  height: 427px;
+  background : url(../images/hero-3.jpg);
+}
 
 .homepage-slider-block {
-    width: 100%;
-    //margin: 20px 154px;
-    padding: 58px 0px 0px 200px;
+    
     text-transform: capitalize;
     .form-group{
 		.view-slider{
 			.view-content{
 		       	text-align: center;
 		   		width: 100%;
+
 		    	
 		    	p {
 					color : $btn-primary-color;
 				}
 				.views_slideshow_cycle_teaser_section{
 					margin:auto;
-					background-color:$gray-dark;
+					
 					.views_slideshow_slide {
 						margin:auto;
-						background-color:$gray-dark;
+						
 					}
 				}
 	       }
 	       .bos365-slider-container{
 
 
-				.speaker-logo-align{
-					height: 100%;
-					display: flex;
+				.speaker-logo-align{					
 					justify-content: center;
 					align-items: center;
+    				margin-top: 46px;
 
 				}
 
 	       		.session-title{
-	       			font-family: $font-family-sans-serif;
+	       			font-family: $font-family-segoe;
 					font-size: 32px;
 					font-weight: 300;
 					font-style: normal;
@@ -102,31 +107,31 @@ a.logo{
 	       		}
 
 	       		.slider-speaker{
-		       		text-align:left;
+		       		text-align:center;
 		       		float:left;
 		       		padding:20px;
 			       .label{
-						font-family: $font-family-sans-serif;
+						font-family: $font-family-segoe;
 						font-size: 13px;
 						font-weight: bold;
 						font-style: normal;
 						font-stretch: normal;
 						line-height: normal;
 						letter-spacing: -0.3px;
-						text-align: left;
+						text-align: center;
 						color: #ffffff;
 						text-transform:uppercase;
 						padding:5px;
 			       	} 
 			       	.title{
-			 			font-family: $font-family-sans-serif;
+			 			font-family: $font-family-segoe;
 						font-size: 20px;
 						font-weight: 300;
 						font-style: normal;
 						font-stretch: normal;
 						line-height: normal;
 						letter-spacing: -0.5px;
-						text-align: left;
+						text-align: center;
 						color: #ffffff;
 						padding:5px;
 					}

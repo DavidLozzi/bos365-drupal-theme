@@ -1,0 +1,81 @@
+.upcoming-sessions{
+
+	.session{
+	  border-radius: 3px;
+	  background-color: #ffffff;
+	  border: solid 1px #cccccc;
+	  padding:24.4px 19.8px 0px 31.8px;
+	  overflow:hidden;
+	  margin-bottom:28.3px;
+}
+
+.heading{
+	    font-family: SegoeUI;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  vertical-align:top;
+}
+
+.details{
+	  text-align:right;
+	  
+}
+
+a{
+	  border-radius: 3px;
+	  border: solid 1px #cccccc;
+	  padding:13px 66px 13px 66px;
+}
+
+.content{
+	margin-top:10px;
+	overflow:hidden;
+	display: flex;
+	align-items: center;
+}
+
+.row{
+	margin-bottom:10px;
+}
+
+.label {
+	text-transform:uppercase;
+  font-family: SegoeUI;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  padding:0px;
+}
+
+.value {
+	  font-family: SegoeUI;
+	font-size: 14px;
+	font-weight: 300;
+  padding:0px;
+	color: #000000;
+}
+
+.description p{
+	  	font-family: SegoeUI;
+		font-size: 14px;
+		font-weight: 300;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		 color: #000000;
+}
+
+}

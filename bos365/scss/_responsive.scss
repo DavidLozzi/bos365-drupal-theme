@@ -1,6 +1,6 @@
 html *
 {
-   font-family: $font-family-sans-serif;
+   font-family: $font-family-segoe;
   color: $gray-base;
 }
 
@@ -8,7 +8,8 @@ html *
 @media all and (min-width: 320px) and (max-width: 425px) {
 
 .navbar-header{
-	width:auto;	
+	width:auto;
+   	
 }
 
 .main-container .block-views-blockorganisers-block-1{
@@ -20,11 +21,99 @@ html *
  }
 }
 
+@media all and (min-width: 368px) and (max-width: 375px) {
+
+.navbar .logo {
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 25%;
+}
+.homepage-slider-block {    
+    width: 331px;
+}
+.session-title {
+    padding: 15px;
+        margin-top: 13px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #ddd;
+    margin-top: -158%;
+}
+  
+    
+.mobile-subscr {
+    display: block;
+    background-color: #fff;
+    float: right;
+    padding: 6px;
+    border-radius: 3px;
+    position: relative;
+    width: 60px;
+    height: 25px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: -467px !important;
+    text-transform:lowercase;
+}
+
+.header-background {
+    width: 364px;
+    height: 484px;
+    // background: url(../images/hero-3.jpg);
+}
+.slider-more-details {   
+    margin: 37px auto !important;   
+}
+.slider-sponsor-logo {
+    width: 150px;
+    height: 80px;
+    background-color: #ffffff;
+    border: solid 1px #ffffff;
+    margin-left: 122px;
+}
+.slider-speaker {
+   
+    padding: 10px !important;
+}
+.our-mission-text{
+    font-size:28px !important;
+}
+.our-mission-text-first{
+     font-size:14px !important;
+}
+.main-container #block-ourmission {
+   
+    margin-top: 15px;
+}
+p.our-mission-text-first {
+    margin-top: 30px;
+}
+.speaker-logo-align{                    
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 30px;
+
+                }
+               .field-content.homepage-sponsor-logo{
+                height:117px;
+               }
+               li.mobile-enable {
+    color: white;
+}
+}
+
+
+
+
+
 
 /*-----------tablet -------------*/
 @media  (max-width: 991px) {
 .main-container .block-views-blockorganisers-block-1{
 	margin:0px;
+
  }
 
  .Bostoncopywrite {
@@ -33,6 +122,21 @@ html *
     margin-bottom: 20px;
     text-align: center;
 }
+
+
+.homepage-slider-block {
+    text-transform: capitalize;
+    .form-group{
+        
+margin-top : 75px !important;
+        
+        
+    }
+}
+
+.session-title {
+            font-size : 18px !important;
+        }
 
 .footer .region.region-footer .info-links ul {
     width: 100%;
@@ -111,7 +215,7 @@ ul.menu.menu--main.nav.navbar-nav{
 .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content{
 	    width: 100%;
 	    img{
-	    	margin: 40px 0px;
+	    	margin: 78px 0px;
 	    }
 }
  .mobile-subscr {
@@ -124,6 +228,7 @@ ul.menu.menu--main.nav.navbar-nav{
     position: relative;
     margin-top: -50px;
 }
+
 
 
 }

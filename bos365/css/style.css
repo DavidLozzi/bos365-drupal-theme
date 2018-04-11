@@ -1055,7 +1055,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", "Open Sans", Arial;
   font-size: 18px;
   line-height: 1.42857;
   color: #000;
@@ -5184,7 +5184,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", "Open Sans", Arial;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5297,7 +5297,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", "Open Sans", Arial;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6363,7 +6363,7 @@ body.toolbar-loading {
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   color: inherit;
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", "Open Sans", Arial;
   font-size: 18px;
   list-style: none;
   min-width: 160px;
@@ -6427,7 +6427,7 @@ p:last-child,
     margin-top: 0; }
 
 html * {
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", "Open Sans", Arial;
   color: #000; }
 
 .navbar-header, .navbar-nav {
@@ -6469,9 +6469,12 @@ a.logo {
   width: 113px;
   height: 70px; }
 
+.header-background {
+  width: 1440px;
+  height: 427px;
+  background: url(../images/hero-3.jpg); }
+
 .homepage-slider-block {
-  width: 100%;
-  padding: 58px 0px 0px 200px;
   text-transform: capitalize; }
   .homepage-slider-block .form-group .view-slider {
     /* 	.views-field-title{
@@ -6486,18 +6489,15 @@ a.logo {
       .homepage-slider-block .form-group .view-slider .view-content p {
         color: #fff; }
       .homepage-slider-block .form-group .view-slider .view-content .views_slideshow_cycle_teaser_section {
-        margin: auto;
-        background-color: #333333; }
+        margin: auto; }
         .homepage-slider-block .form-group .view-slider .view-content .views_slideshow_cycle_teaser_section .views_slideshow_slide {
-          margin: auto;
-          background-color: #333333; }
+          margin: auto; }
     .homepage-slider-block .form-group .view-slider .bos365-slider-container .speaker-logo-align {
-      height: 100%;
-      display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      margin-top: 46px; }
     .homepage-slider-block .form-group .view-slider .bos365-slider-container .session-title {
-      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Segoe UI", "Open Sans", Arial;
       font-size: 32px;
       font-weight: 300;
       font-style: normal;
@@ -6507,30 +6507,30 @@ a.logo {
       text-align: center;
       color: #ffffff; }
     .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-speaker {
-      text-align: left;
+      text-align: center;
       float: left;
       padding: 20px; }
       .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-speaker .label {
-        font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Segoe UI", "Open Sans", Arial;
         font-size: 13px;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
         letter-spacing: -0.3px;
-        text-align: left;
+        text-align: center;
         color: #ffffff;
         text-transform: uppercase;
         padding: 5px; }
       .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-speaker .title {
-        font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Segoe UI", "Open Sans", Arial;
         font-size: 20px;
         font-weight: 300;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
         letter-spacing: -0.5px;
-        text-align: left;
+        text-align: center;
         color: #ffffff;
         padding: 5px; }
     .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-sponsor-logo {
@@ -6556,7 +6556,7 @@ a.logo {
         text-align: center; }
 
 html * {
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", "Open Sans", Arial;
   color: #000; }
 
 .main-container #block-ourmission {
@@ -6697,7 +6697,7 @@ html * {
 
 .footer {
   background-color: #2d2522;
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", "Open Sans", Arial;
   font-size: 18px;
   font-weight: 300;
   padding: 60px 0px;
@@ -6721,7 +6721,7 @@ li.mobile-enable {
   background-color: #e43f01; }
 
 html * {
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", "Open Sans", Arial;
   color: #000; }
 
 /*---------mobile --------------*/
@@ -6730,6 +6730,63 @@ html * {
     width: auto; }
   .main-container .block-views-blockorganisers-block-1 {
     margin: 0px; } }
+
+@media all and (min-width: 368px) and (max-width: 375px) {
+  .navbar .logo {
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 25%; }
+  .homepage-slider-block {
+    width: 331px; }
+  .session-title {
+    padding: 15px;
+    margin-top: 13px; }
+  .navbar-default .navbar-toggle {
+    border-color: #ddd;
+    margin-top: -158%; }
+  .mobile-subscr {
+    display: block;
+    background-color: #fff;
+    float: right;
+    padding: 6px;
+    border-radius: 3px;
+    position: relative;
+    width: 60px;
+    height: 25px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: -467px !important;
+    text-transform: lowercase; }
+  .header-background {
+    width: 364px;
+    height: 484px; }
+  .slider-more-details {
+    margin: 37px auto !important; }
+  .slider-sponsor-logo {
+    width: 150px;
+    height: 80px;
+    background-color: #ffffff;
+    border: solid 1px #ffffff;
+    margin-left: 122px; }
+  .slider-speaker {
+    padding: 10px !important; }
+  .our-mission-text {
+    font-size: 28px !important; }
+  .our-mission-text-first {
+    font-size: 14px !important; }
+  .main-container #block-ourmission {
+    margin-top: 15px; }
+  p.our-mission-text-first {
+    margin-top: 30px; }
+  .speaker-logo-align {
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; }
+  .field-content.homepage-sponsor-logo {
+    height: 117px; }
+  li.mobile-enable {
+    color: white; } }
 
 /*-----------tablet -------------*/
 @media (max-width: 991px) {
@@ -6740,6 +6797,12 @@ html * {
     display: block;
     margin-bottom: 20px;
     text-align: center; }
+  .homepage-slider-block {
+    text-transform: capitalize; }
+    .homepage-slider-block .form-group {
+      margin-top: 75px !important; }
+  .session-title {
+    font-size: 18px !important; }
   .footer .region.region-footer .info-links ul {
     width: 100%;
     text-align: center; }
@@ -6790,7 +6853,7 @@ html * {
   .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content {
     width: 100%; }
     .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content img {
-      margin: 40px 0px; }
+      margin: 78px 0px; }
   .mobile-subscr {
     display: block;
     background-color: #fff;
@@ -6805,3 +6868,71 @@ html * {
 @media all and (min-width: 991px) and (max-width: 1200px) {
   .main-container .block-views-blockorganisers-block-1 {
     margin: 0px; } }
+
+.upcoming-sessions .session {
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  padding: 24.4px 19.8px 0px 31.8px;
+  overflow: hidden;
+  margin-bottom: 28.3px; }
+
+.upcoming-sessions .heading {
+  font-family: SegoeUI;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  vertical-align: top; }
+
+.upcoming-sessions .details {
+  text-align: right; }
+
+.upcoming-sessions a {
+  border-radius: 3px;
+  border: solid 1px #cccccc;
+  padding: 13px 66px 13px 66px; }
+
+.upcoming-sessions .content {
+  margin-top: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center; }
+
+.upcoming-sessions .row {
+  margin-bottom: 10px; }
+
+.upcoming-sessions .label {
+  text-transform: uppercase;
+  font-family: SegoeUI;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+  padding: 0px; }
+
+.upcoming-sessions .value {
+  font-family: SegoeUI;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0px;
+  color: #000000; }
+
+.upcoming-sessions .description p {
+  font-family: SegoeUI;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000; }
