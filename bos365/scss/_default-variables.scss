@@ -46,11 +46,11 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Segoe UI","Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-segoe:  "Segoe UI","Open Sans",  Arial !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:        $font-family-sans-serif !default;
+$font-family-base:        $font-family-segoe !default;
 
 $font-size-base:          18px !default;
 $font-size-large:         20px !default; // ~18px

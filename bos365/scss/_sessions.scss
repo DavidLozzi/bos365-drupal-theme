@@ -1,4 +1,35 @@
+.block-views-blockpast-sessions-block-1 {
+	background-color: $brand-secondary;
+	margin: 0px -104px;
+	h2{
+		text-align: center;
+		font-family: $font-family-segoe;
+  		font-size: 32px;
+  		font-weight: 300;
+ 		text-align: center;
+  		color: $gray-light;
+
+	}
+}
+
+.block-views-blockupcoming-session-block-1 {
+	
+	h2{
+		text-align: center;
+		font-family: $font-family-segoe;
+  		font-size: 32px;
+  		font-weight: 300;
+ 		text-align: center;
+  		color: $gray-light;
+
+	}
+}
+
+
+
 .upcoming-sessions{
+	width:80%;
+	margin:auto;
 
 	.session{
 	  border-radius: 3px;
@@ -10,7 +41,7 @@
 }
 
 .heading{
-	    font-family: SegoeUI;
+	    font-family:$font-family-segoe;
   font-size: 18px;
   font-weight: 600;
   font-style: normal;
@@ -24,18 +55,21 @@
 
 .details{
 	  text-align:right;
-	  
+
 }
 
 a{
 	  border-radius: 3px;
 	  border: solid 1px #cccccc;
 	  padding:13px 66px 13px 66px;
+	  text-align: center;
+  		color: #0078d7;
+  		margin-bottom:5px;
 }
 
 .content{
 	margin-top:10px;
-	overflow:hidden;
+	/*overflow:hidden;*/
 	display: flex;
 	align-items: center;
 }
@@ -46,20 +80,16 @@ a{
 
 .label {
 	text-transform:uppercase;
-  font-family: SegoeUI;
+  font-family: $font-family-segoe;
   font-size: 11px;
   font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: left;
   color: #999999;
   padding:0px;
 }
 
 .value {
-	  font-family: SegoeUI;
+	  font-family: $font-family-segoe;
 	font-size: 14px;
 	font-weight: 300;
   padding:0px;
@@ -67,15 +97,149 @@ a{
 }
 
 .description p{
-	  	font-family: SegoeUI;
+	  	font-family: $font-family-segoe;
 		font-size: 14px;
 		font-weight: 300;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
 		text-align: left;
 		 color: #000000;
 }
+
+
+
+
+}
+
+
+/**************************************************************************/
+.session-details {
+	
+
+.session{
+	  border-radius: 3px;
+	  background-color: #ffffff;
+	  border: solid 1px #cccccc;
+	  padding:24.4px 19.8px 0px 31.8px;
+	  overflow:hidden;
+	  margin-bottom:28.3px;
+
+	  .title {  
+	font-family: SegoeUI;
+	  font-size: 32px;
+	  font-weight: 300;
+	  text-align: left;
+	  color: #666666;
+		 }
+		}
+
+		.content{
+			margin-top:10px;
+			overflow:hidden;
+			display: flex;
+			align-items: center;
+		}
+
+		 .row{
+			margin-bottom:10px;
+		}
+
+
+		 .label {
+			text-transform:uppercase;
+		  font-family: SegoeUI;
+		  font-size: 11px;
+		  font-weight: 600;
+		  text-align: left;
+		  color: #999999;
+		  padding:0px;
+		}
+
+		 .value {
+			font-family: SegoeUI;
+			font-size: 14px;
+			font-weight: 300;
+			padding:0px;
+			color: #000000;
+		}
+		 .event-description{
+			
+		}
+
+		 .map-marker i{
+			color:red;
+			font-size:24px;
+			margin-right:5px;
+			
+		}
+
+		 .map-marker a{
+		  font-family: SegoeUI;
+		  font-size: 18px;
+		  font-weight: 300;
+		  text-align: left;
+		  color: #0078d7;
+		}
+
+		 .speaker-details{
+			background-color:#eeeeee;
+			overflow:hidden;
+		}
+
+		 .speaker-details .title{
+		  font-family: SegoeUI;
+		  font-size: 32px;
+		  font-weight: 300;
+		  text-align: center;
+		  color: #666666;
+		}
+
+
+		 .speaker-details .image{
+			border-radius:75px;
+			border:2px solid white;
+			width:135px;
+			height:135px;
+			margin:auto;
+			overflow:hidden;
+			display: flex;
+			align-items: center;
+		}
+
+		 .speaker-details img{
+
+			margin:auto;
+		}
+
+
+		 .speaker-details .name{	
+		  font-family: SegoeUI;
+		  font-size: 34px;
+		  font-weight: 300;
+		  text-align: center;
+		  color: #000000;
+			margin:auto;
+		}
+
+
+		.session-details .speaker-details .description{	
+		  font-family: SegoeUI;
+		  font-size: 18px;
+		  font-weight: 300;
+		  line-height: 1.78;
+		  text-align: center;
+		  color: #000000;
+		}
+
+		 .socio-icons {
+			margin: 17px 0px 17px 0px;
+			text-align:center;
+		}
+
+		 .socio-icons i{
+			padding: 10px;
+			background-color: #000000;
+			border-radius: 17px;
+			color: white;
+			margin-right: 10px;
+		}
 
 }
