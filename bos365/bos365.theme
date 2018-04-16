@@ -7,12 +7,15 @@
  * Place your custom PHP code in this file.
  */
 
+use Drupal\node\Entity\Node;
+use Drupal\field\FieldConfigInterface;
+
+
  
 function bos365_preprocess_block(&$variables) {
   if (in_array($variables['elements']['#id'], array('views_block__slider_block_1'))) {
     $variables['attributes']['class'][] = 'homepage-slider-block row';
-    //$variables['attributes']['class'][]['#prefix'] = '<div class="my-class">';
-  //$data['content']['#suffix'] = '</div>';
+    
   }
 }
 
@@ -33,3 +36,4 @@ function bos365_theme_suggestions_page_alter(array &$suggestions, array $variabl
     $suggestions[] = 'page__'.$content_type;
   }
 }
+

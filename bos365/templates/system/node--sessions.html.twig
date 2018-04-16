@@ -86,52 +86,54 @@
   {% endif %}
   {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer class="comment-submitted">
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+  
 <div{{ content_attributes.addClass('node__content') }}>
-    
+     
   </div>
   
 
-  
+ 
+
   <div class="row session-details">
   <div class="session">
     <div class="row">
-      <div class="col-md-12 title">{{ content.title }}</div>
+      <div class="col-md-12 title">{{ node.label }}</div>
     </div>
     <div class="row">
-      <div class="col-md-12 event-description"> </div>
+      <div class="col-md-12 event-description">{{content.field_body }}</div>
     </div>
     <div class="row content">
       <div class="col-md-4 col-xs-12" >
         <div class="label col-md-12">LOCATION</div>
-        <div class="value col-md-12"></div>
+        <div class="value col-md-12">{{content.field_venue }}</div>
         <div class="map-marker"><i class="fa fa-map-marker"></i><a href="#">Driving directions and Map &gt;</a></div>
       </div>
       <div class="col-md-4 col-xs-12" >       
         <div class="label col-md-12">Date</div>
-        <div class="value col-md-12"> {{ created.content | date("Y/m/d") }}</div>
+        <div class="value col-md-12">{{ content.field_date }}</div>
       </div>
       <div class="col-md-2 col-xs-12" >       
         <div class="label col-md-12">Sponsored By</div>
-        
+        {{ content.logo }}
       </div>
     </div>
   </div>
-  <div class="speaker-details">
-    <div class="col-md-12"><div class="title">Speaker</div></div>
-    <div class="col-md-12"><div class="image"><img src="2.png" /></div></div>
-    <div class="col-md-12"><div class="name">Dimitri Ayrapetov</div></div>
-    <div class="col-md-12 socio-icons"><a href=""><i class="fa fa-linkedin"></i></a><a href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-globe"></i></a></div>
-    <div class="col-md-12"><div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum aliquam varius. Quisque dignissim neque et varius hendrerit. Etiam hendrerit nisl a tincidunt feugiat. In eros quam, vehicula vitae tellus vel, faucibus suscipit velit. Nulla sed euismod magna. Quisque elementum ante at pharetra viverra. Praesent posuere ac augue consequat malesuada. Etiam ut hendrerit sem, non sollicitudin nibh.</div></div>
-  </div>
+  {{ content.field_speaker }}
 </div>
+
+<div class="resources">
+    <div class="header">Resources</div>
+    <div class="resource"><a href="{{ content.field_speaker_presentation_link_.0['#url'] }}"><img src="themes/bos365/images/ppt.png"></a> Lorem Ipsum site amet file</div>
+    <div class="resource"><a href="{{ content.field_speaker_presentation_uploa.0 }}"><img src="themes/bos365/images/ppt.png"></a> Lorem Ipsum site amet file 2</div>
+  </div>
+  
+  
+  <div class="video">
+    <div class="header">Video
+  </div>
+    ​<div><iframe width="70%" height="550" src="{{ content.field_video.0['#url'] }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    
+  </div>
 
 </article>
 

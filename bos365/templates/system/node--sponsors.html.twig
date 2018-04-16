@@ -64,7 +64,7 @@
  */
 #}
 
-{{ node.type.entity.label }}
+
 {%
   set classes = [
     'node',
@@ -94,12 +94,18 @@
       </div>
     </footer>
   {% endif %}
-
-  <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
+<div{{ content_attributes.addClass('node__content') }}>
+    
   </div>
   
-   
+
+<div class="sponsor-det">
+  <div class="company-logo">{{ content.field_logo }}</div>
+  <div class="company-name">{{ node.label }}</div>
+  <div class="description">{{ content.body }}</div>
+  <div class="url"> <a href="">{{ content.field_url }}</a></div>
+</div>
+  
 
 </article>
 

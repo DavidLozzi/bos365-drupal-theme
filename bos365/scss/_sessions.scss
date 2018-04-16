@@ -25,8 +25,6 @@
 	}
 }
 
-
-
 .upcoming-sessions{
 	width:80%;
 	margin:auto;
@@ -220,7 +218,7 @@ a{
 		}
 
 
-		.session-details .speaker-details .description{	
+		.speaker-details .description{	
 		  font-family: SegoeUI;
 		  font-size: 18px;
 		  font-weight: 300;
@@ -234,12 +232,60 @@ a{
 			text-align:center;
 		}
 
-		 .socio-icons i{
-			padding: 10px;
+		 .socio-icons .icon-div{
 			background-color: #000000;
 			border-radius: 17px;
 			color: white;
 			margin-right: 10px;
 		}
 
+
+
+		.resources {
+			text-align:center;
+		}
+
+		.resources .header{
+		  font-family: SegoeUI;
+		  font-size: 32px;
+		  font-weight: 300;
+		  text-align: center;
+		  color: #666666;
+			position: relative;	
+			padding:20px 0px;
+		}
+		.resources .resource{
+			margin:10px auto;
+			width: 344px;
+			height: 60px;
+			border-radius: 3px;
+			background-color: #ffffff;
+			border: solid 1px #cccccc;
+			font-family: SegoeUI;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 1.78;
+			text-align: left;
+			color: #000000;
+			position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		}
+
+		.video{
+				background-color:#eeeeee;
+				overflow:hidden;
+				text-align:center;
+		}
+
+		.video .header{
+		  font-family: SegoeUI;
+		  font-size: 32px;
+		  font-weight: 300;
+		  text-align: center;
+		  color: #666666;
+			position: relative;	
+			padding:20px 0px;
+		}
 }
