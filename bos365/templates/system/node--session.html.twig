@@ -86,26 +86,53 @@
   {% endif %}
   {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer class="comment-submitted">
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+  
 <div{{ content_attributes.addClass('node__content') }}>
-    
+     
   </div>
   
 
-<div class="sponsor-det">
-  <div class="company-logo">{{ content.field_logo }}</div>
-  <div class="company-name">{{ node.label }}</div>
-  <div class="description">{{ content.body }}</div>
-  <div class="url"> <a href="">{{ content.field_url }}</a></div>
+ 
+
+  <div class="row session-details">
+  <div class="session full-width">
+    <div class="row">
+      <div class="col-md-12 title">{{ node.label }}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 event-description">{{content.body }}</div>
+    </div>
+    <div class="row content align-vtop">
+      <div class="col-md-4 col-xs-12" >
+        <div class="label col-md-12">LOCATION</div>
+        <div class="value col-md-12">{{content.field_venue }}</div>
+        <div class="map-marker"><i class="fa fa-map-marker"></i><a href="#">Driving directions and Map &gt;</a></div>
+      </div>
+      <div class="col-md-4 col-xs-12" >       
+        <div class="label col-md-12">Date</div>
+        <div class="value col-md-12">{{ content.field_date }}</div>
+      </div>
+      <div class="col-md-2 col-xs-12" >       
+        <div class="label col-md-12">Sponsored By</div>
+        {{ content.logo }}
+      </div>
+    </div>
+  </div>
+  {{ content.field_speaker }}
 </div>
+
+<div class="resources full-width">
+    <div class="header">Resources</div>
+    <div class="resource"><a href="{{ content.field_speaker_presentation_link.0['#url'] }}"><img src="/themes/contrib/bos365/images/ppt.png"></a> {{ content.field_speaker_presentation_link.0['#text'] }}</div>
+    <div class="resource"><a href="{{ content.field_speaker_presentation.0 }}"><img src="/themes/contrib/bos365/images/ppt.png"></a> Lorem Ipsum site amet file 2</div>
+  </div>
   
+  
+  <div class="video full-width">
+    <div class="header">Video</div>
+    ​<div class="container"><iframe class="video-frame" src="{{ content.field_video.0['#url'] }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    
+  </div>
 
 </article>
 

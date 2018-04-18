@@ -12,12 +12,17 @@ html *
    	
 }
 
-.main-container .block-views-blockorganisers-block-1{
-	margin:0px;
- }
-.main-container .block-views-blockpast-session-block-1{
+.main-container .block-views-blockorganisers-block-1,.block-views-blockpast-session-block-1, .block-views-blockpast-sessions-block-1, .block-views-blockorganising-sponsors-block-1, .block-views-blocklatest-sponsor-block-1{
     margin:0px;
+     padding-left:0px;
+     padding-right:0px;
  }
+ .full-width{
+     margin-left: 0px;
+     padding-left:0px;
+     padding-right:0px;
+ }
+ 
  .footer {
 
  }
@@ -113,13 +118,16 @@ p.our-mission-text-first {
 
 /*-----------tablet -------------*/
 @media  (max-width: 991px) {
-.main-container .block-views-blockorganisers-block-1{
+.main-container .block-views-blockorganisers-block-1,.block-views-blockpast-session-block-1, .block-views-blockpast-sessions-block-1, .block-views-blockorganising-sponsors-block-1, .block-views-blocklatest-sponsor-block-1{
 	margin:0px;
+     padding-left:0px;
+     padding-right:0px;
 
  }
-
- .main-container .block-views-blockpast-session-block-1{
-    margin:0px;
+ .full-width{
+     margin-left: 0px;
+     padding-left:0px;
+     padding-right:0px;
  }
 
  .Bostoncopywrite {
@@ -241,11 +249,14 @@ ul.menu.menu--main.nav.navbar-nav{
 
 /*-----------------mini desktop ------------------*/
  @media all and (min-width: 991px) and (max-width: 1200px) {
-.main-container .block-views-blockorganisers-block-1{
-	margin:0px;
- }
-
-.main-container .block-views-blockpast-session-block-1{
+.main-container .block-views-blockorganisers-block-1,.block-views-blockpast-session-block-1, .block-views-blockpast-sessions-block-1, .block-views-blockorganising-sponsors-block-1, .block-views-blocklatest-sponsor-block-1{
     margin:0px;
+    padding-left:0px;
+    padding-right:0px;
+ }
+ .full-width{
+     margin-left: 0px;
+     padding-left:0px;
+     padding-right:0px;
  }
 }
