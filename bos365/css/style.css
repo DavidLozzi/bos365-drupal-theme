@@ -6555,6 +6555,43 @@ a.logo {
         display: block;
         text-align: center; }
 
+.hero-banner {
+  height: 250px; }
+  .hero-banner img {
+    position: absolute;
+    width: 100vw;
+    left: -120px;
+    top: -20px;
+    z-index: -1;
+    min-height: 350px;
+    height: auto; }
+  .hero-banner .slogan-1, .hero-banner .slogan-1 p {
+    font-family: "Segoe UI", "Open Sans", Arial;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #eeeeee;
+    text-transform: none; }
+  .hero-banner .slogan-2, .hero-banner .slogan-2 p {
+    font-family: "Segoe UI", "Open Sans", Arial;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2.22;
+    text-align: center;
+    color: #eeeeee;
+    text-transform: none; }
+  .hero-banner .hero-link {
+    margin-top: 30px;
+    text-align: center; }
+    .hero-banner .hero-link a {
+      border-radius: 3px;
+      border: solid 1px #eeeeee;
+      padding: 10px;
+      color: #eeeeee;
+      text-decoration: none;
+      text-transform: none; }
+
 html * {
   font-family: "Segoe UI", "Open Sans", Arial;
   color: #000; }
@@ -6707,10 +6744,18 @@ html * {
     color: #fff; }
   .footer .region.region-footer .info-links ul li {
     display: inline-block;
-    padding: 0px 15px;
     margin: 0px;
     float: right;
     color: #fff; }
+  .footer .region.region-footer .info-links ul li.icon {
+    font-size: 2em;
+    padding: 0px 15px; }
+  .footer .region.region-footer .info-links ul li.text {
+    padding: 20px 15px; }
+  .footer .region.region-footer .info-links li svg path {
+    color: #ffffff; }
+  .footer .region.region-footer .Bostoncopywrite {
+    padding-top: 20px; }
 
 li.mobile-enable {
   display: none; }
@@ -6856,6 +6901,18 @@ html * {
   .info-links-mobile ul {
     width: 100%;
     text-align: center; }
+  .info-links-mobile ul li {
+    display: inline-block;
+    margin: 0px;
+    float: right;
+    color: #fff; }
+  .info-links-mobile ul li.icon {
+    font-size: 2em;
+    padding: 0px 15px; }
+  .info-links-mobile ul li.text {
+    padding: 20px 15px; }
+  .info-links-mobile li svg path {
+    color: #ffffff; }
   ul li.mobile-enable {
     display: inline-block;
     text-align: center;
@@ -6892,6 +6949,19 @@ html * {
   width: 100vw !important;
   padding-left: 204px !important;
   padding-right: 204px !important; }
+  .full-width h2 {
+    text-align: center;
+    font-family: "Segoe UI", "Open Sans", Arial;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    color: #777777; }
+
+.filled-background {
+  background-color: #eeeeee; }
+
+.filled-dark-bg {
+  background-color: #222222; }
 
 .align-vtop {
   display: inline-block !important;
@@ -7098,9 +7168,13 @@ html * {
 
 .session-details .socio-icons .icon-div {
   background-color: #000000;
-  border-radius: 17px;
-  color: white;
-  margin-right: 10px; }
+  border-radius: 20px;
+  margin-right: 10px;
+  padding: 0px 5px;
+  float: left; }
+
+.session-details .socio-icons .icon-div svg path {
+  color: white; }
 
 .session-details .resources {
   text-align: center; }
@@ -7115,27 +7189,29 @@ html * {
   padding: 20px 0px; }
 
 .session-details .resources .resource {
-  margin: 10px auto;
-  width: 344px;
-  height: 60px;
-  border-radius: 3px;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
+  margin: 0px 0px 30px 0px;
+  text-align: center; }
+
+.session-details .resources .resource a {
   font-family: SegoeUI;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.78;
-  text-align: left;
-  color: #000000;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px; }
+  border-radius: 3px;
+  padding: 10px 50px 10px 50px;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  color: #0078d7; }
+
+.session-details .resources .resource a:hover {
+  background-color: #cccccc;
+  text-decoration: none; }
 
 .session-details .video {
   background-color: #eeeeee;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 10px; }
   .session-details .video .container {
     position: relative;
     width: 100%;
@@ -7215,35 +7291,67 @@ html * {
   background-color: #eeeeee; }
 
 .sponsor-det .company-logo {
-  text-align: center; }
+  margin-bottom: 40px;
+  margin-top: 25px; }
+  .sponsor-det .company-logo img {
+    margin: auto;
+    min-height: 60px;
+    width: auto; }
 
 .sponsor-det .company-name {
-  font-family: SegoeUI;
+  font-family: "Segoe UI", "Open Sans", Arial;
   font-size: 32px;
   font-weight: 300;
   text-align: left;
   color: #666666; }
 
-.sponsor-det .url {
-  border-radius: 3px;
-  border: solid 1px #cccccc;
-  padding: 10px;
-  font-family: SegoeUI;
+.sponsor-det .description {
+  text-align: justify;
+  font-family: "Segoe UI", "Open Sans", Arial;
   font-size: 18px;
   font-weight: 300;
-  letter-spacing: -0.7px;
-  text-align: center;
-  color: #0078d7;
-  margin: 40px 0px; }
+  line-height: 1.78;
+  color: #000000; }
+
+.sponsor-det .url {
+  margin: 40px auto;
+  text-align: center; }
+  .sponsor-det .url a {
+    border-radius: 3px;
+    border: solid 1px #cccccc;
+    padding: 10px 30px;
+    font-family: SegoeUI;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.7px;
+    text-align: center;
+    color: #0078d7; }
+  .sponsor-det .url a:hover {
+    text-decoration: none;
+    background-color: #eeeeee;
+    color: red; }
 
 .sponsor-det-sessions {
   background-color: #eeeeee;
   overflow: hidden; }
+  .sponsor-det-sessions .header {
+    font-family: "Segoe UI", "Open Sans", Arial;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    color: #666666;
+    margin: 20px 0px 20px 0px; }
 
-.sponsor-det-sessions .header {
-  font-family: SegoeUI;
-  font-size: 32px;
-  font-weight: 300;
-  text-align: center;
-  color: #666666;
-  margin: 20px 0px 20px 0px; }
+.block-views-blocksponsor-session-block-1 {
+  background-color: #eeeeee;
+  width: 100vw !important;
+  margin-left: -104px;
+  padding-left: 204px;
+  padding-right: 204px; }
+  .block-views-blocksponsor-session-block-1 h2 {
+    text-align: center;
+    font-family: "Segoe UI", "Open Sans", Arial;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    color: #777777; }

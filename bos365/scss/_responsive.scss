@@ -217,6 +217,22 @@ ul.menu.menu--main.nav.navbar-nav{
     width: 100%;
     text-align: center;
 }
+.info-links-mobile ul li{
+    display: inline-block;
+    margin: 0px;
+    float: right;
+    color: $btn-primary-color;
+}
+.info-links-mobile ul li.icon {
+    font-size:2em;
+    padding: 0px 15px;
+}
+.info-links-mobile ul li.text{
+    padding: 20px 15px;
+}
+.info-links-mobile li svg path{
+    color:#ffffff;            
+}
 
 	ul li.mobile-enable {
     display: inline-block;

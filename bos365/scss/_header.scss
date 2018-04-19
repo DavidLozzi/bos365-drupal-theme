@@ -177,3 +177,50 @@ a.logo{
 	}
 }
 
+.hero-banner{
+   height:250px;
+    img {
+        position:absolute;
+        width:100vw;
+        left:-120px;
+        top:-20px;
+        z-index:-1;
+        min-height:350px;
+        height:auto;
+    }
+    .image-container{
+        
+    }
+    .slogan-1, .slogan-1 p{
+        font-family: $font-family-segoe;
+        font-size: 32px;
+        font-weight: 300;
+        letter-spacing: -0.8px;
+        text-align: center;
+        color: $gray-lighter;
+        text-transform: none;
+    }
+    .slogan-2, .slogan-2 p{
+        font-family: $font-family-segoe;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 2.22;
+        text-align: center;
+        color: $gray-lighter;
+        text-transform: none;
+    }
+    
+    .hero-link {
+        margin-top:30px;
+        text-align:center;
+        a{
+            border-radius: 3px;
+            border: solid 1px $gray-lighter;
+            padding:10px;
+            color:$gray-lighter;
+            text-decoration: none;
+            text-transform: none;
+
+        }
+    }
+}

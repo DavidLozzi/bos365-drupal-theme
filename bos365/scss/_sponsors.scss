@@ -1,23 +1,21 @@
 .sponsor-det-latest{
-	
+    .header{
+        font-family: SegoeUI;
+        font-size: 32px;
+        font-weight: 300;
+        text-align: center;
+        color: #666666;
+        margin: 20px 0px 20px 0px;
+    }
 
-	.header{
-		
-	  font-family: SegoeUI;
-	  font-size: 32px;
-	  font-weight: 300;
-	  text-align: center;
-	  color: #666666;
-	  margin: 20px 0px 20px 0px;
-	}
-
-	.details{
-		  border-radius: 6px;
-		border: solid 1px #cccccc;
-		padding:20px;
-		margin-bottom:40px;
-	}
+    .details{
+        border-radius: 6px;
+        border: solid 1px #cccccc;
+        padding:20px;
+        margin-bottom:40px;
+    }
 }
+
 .block-views-blockall-sponsors-block-1, .block-views-blockorganising-sponsors-block-1, .block-views-blocklatest-sponsor-block-1 {
     width:100vw;
     display: flex;
@@ -38,6 +36,7 @@
             margin-bottom:30px;
     }
 }
+
 .sponsor-det-list , .sponsor-det-org {
 	
 	.header {
@@ -72,53 +71,82 @@
         background-color: $brand-secondary;
 }
         
-.sponsor-det .company-logo{
-	text-align:center;
-}
-
-.sponsor-det .company-name{
-
-  font-family: SegoeUI;
-  font-size: 32px;
-  font-weight: 300;
-  text-align: left;
-
-  color: #666666;
-}
-
-.sponsor-det .description{
-	
-}
-
-.sponsor-det .url{
-	border-radius: 3px;
-	border: solid 1px #cccccc;
-	padding:10px;	
-	font-family: SegoeUI;
-	font-size: 18px;
-	font-weight: 300;
-	letter-spacing: -0.7px;
-	text-align: center;
-	color: #0078d7;
-	margin:40px 0px;
+.sponsor-det {
+    
+    .company-logo { 
+        margin-bottom:40px;
+        margin-top:25px;
+        img{
+            margin: auto;
+            min-height: 60px;
+            width:auto;
+        }
+    }
+    .company-name{
+        font-family: $font-family-segoe;
+        font-size: 32px;
+        font-weight: 300;
+        text-align: left;
+        color: #666666;
+    }
+    .description{
+	text-align: justify;
+        font-family: $font-family-segoe;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.78;
+        color: #000000;
+    }
+    .url{	
+	margin:40px auto;
+        text-align:center;
+        a{
+            border-radius: 3px;
+            border: solid 1px #cccccc;
+            padding:10px 30px;	
+            font-family: SegoeUI;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: -0.7px;
+            text-align: center;
+            color: $button-text-color;
+        }
+        a:hover{
+            text-decoration: none;
+            background-color: $button-hover-bg-color;
+            color: $button-hover-text-color;
+        }
+    }  
 }
 
 .sponsor-det-sessions {
-		background-color:#eeeeee;
-		overflow:hidden;	
-}
-
-.sponsor-det-sessions .header{
+    background-color:#eeeeee;
+    overflow:hidden;	
+    
+    .header{
 		
-  font-family: SegoeUI;
-  font-size: 32px;
-  font-weight: 300;
-  text-align: center;
-  color: #666666;
-  margin: 20px 0px 20px 0px;	
+        font-family: $font-family-segoe;
+        font-size: 32px;
+        font-weight: 300;
+        text-align: center;
+        color: #666666;
+        margin: 20px 0px 20px 0px;	
+    }
 }
 
+.block-views-blocksponsor-session-block-1 {
+	background-color: $brand-secondary;
+        width: 100vw !important;
+	margin-left: -$page-left-margin;
+        padding-left:$page-left-padding;
+        padding-right:$page-left-padding;
+	h2{
+		text-align: center;
+		font-family: $font-family-segoe;
+  		font-size: 32px;
+  		font-weight: 300;
+ 		text-align: center;
+  		color: $gray-light;
 
-
-
-
+	}
+}

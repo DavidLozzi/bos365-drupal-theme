@@ -3,6 +3,23 @@
     width: 100vw !important;
     padding-left: $page-left-padding !important;
     padding-right: $page-left-padding !important;
+    h2{
+            text-align: center;
+            font-family: $font-family-segoe;
+            font-size: 32px;
+            font-weight: 300;
+            text-align: center;
+            color: $gray-light;
+
+    }
+}
+
+.filled-background{
+    background-color: $brand-secondary;
+}
+
+.filled-dark-bg{
+    background-color: $gray-darker;
 }
 
 .align-vtop{
@@ -274,10 +291,15 @@
 
 		 .socio-icons .icon-div{
 			background-color: #000000;
-			border-radius: 17px;
-			color: white;
+			border-radius: 20px;
 			margin-right: 10px;
+                        padding: 0px 5px;
+                        float:left;
 		}
+                
+		 .socio-icons .icon-div svg path{
+			color: white;
+                 }
 
 
 
@@ -295,28 +317,30 @@
 			padding:20px 0px;
 		}
 		.resources .resource{
-			margin:10px auto;
-			width: 344px;
-			height: 60px;
-			border-radius: 3px;
-			background-color: #ffffff;
-			border: solid 1px #cccccc;
+			margin:0px 0px 30px 0px;
+			text-align: center;
+		}
+                .resources .resource a{
 			font-family: SegoeUI;
 			font-size: 18px;
 			font-weight: 300;
 			line-height: 1.78;
-			text-align: left;
-			color: #000000;
-			position: relative;
-		min-height: 1px;
-		padding-right: 15px;
-		padding-left: 15px;
-		}
+			border-radius: 3px;
+                        padding:10px 50px 10px 50px;
+			background-color: #ffffff;
+			border: solid 1px #cccccc;
+			color: #0078d7;
+                }
+                .resources .resource a:hover{
+                    background-color: #cccccc;
+                    text-decoration: none;
+                }
 
 		.video{
                     background-color:#eeeeee;
                     overflow:hidden;
                     text-align:center;
+                    padding-bottom:10px;
                     .container {
                         position: relative;
                         width: 100%;
