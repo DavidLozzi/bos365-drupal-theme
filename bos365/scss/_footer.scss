@@ -1,21 +1,19 @@
-
-
-
 .footer{
 
-		background-color: #2d2522;
-	    font-family: $font-family-segoe;
-	    font-size: $font-size-base;
-	    font-weight: 300;
-	    padding: 60px 0px;
-	    margin: 0px;
-	    color: $btn-primary-color;
-	.region.region-footer{
-		
+    background-color: #2d2522;
+    font-family: $font-family-segoe;
+    font-size: $font-size-base;
+    font-weight: 300;
+    padding: 60px 0px;
+    margin: 0px;
+    color: $btn-primary-color;
+    
+    .region.region-footer{
 
-	 span {
-	    	color: $btn-primary-color;
-    	}
+
+        span {
+            color: $btn-primary-color;
+        }
 
 	.info-links ul li {
 	    display: inline-block;
@@ -38,8 +36,7 @@
         .Bostoncopywrite{
             padding-top:20px;
         }
-
-}
+    }
 
 }
 li.mobile-enable {

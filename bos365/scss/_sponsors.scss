@@ -1,6 +1,6 @@
 .sponsor-det-latest{
     .header{
-        font-family: SegoeUI;
+        font-family: $font-family-segoe;
         font-size: 32px;
         font-weight: 300;
         text-align: center;
@@ -102,14 +102,15 @@
         text-align:center;
         a{
             border-radius: 3px;
-            border: solid 1px #cccccc;
+            border: solid 1px $btn-default-border;
             padding:10px 30px;	
-            font-family: SegoeUI;
+            font-family: $font-family-segoe;
             font-size: 18px;
             font-weight: 300;
             letter-spacing: -0.7px;
             text-align: center;
-            color: $button-text-color;
+            color:  $btn-default-color;
+            background-color: $btn-default-bg;
         }
         a:hover{
             text-decoration: none;

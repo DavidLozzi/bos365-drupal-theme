@@ -6,171 +6,146 @@ html *
 
 .main-container{
 
-	#block-ourmission {
-		text-align :center;
-		margin-bottom: 5px;
-    	padding-bottom: 20px;
-    	border-bottom: 1px solid $brand-secondary;
-    	background-color: $close-text-shadow;
-	}
+    #block-ourmission {
+        text-align :center;
+        margin-bottom: 5px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $brand-secondary;
+        background-color: $close-text-shadow;
+    }
 
-	#block-ourmission h2 {
-		  font-size: 32px;
-		  font-weight: 300;
-		  font-style: normal;
-		  font-stretch: normal;
-		  line-height: normal;
-		  letter-spacing: normal;
-		  text-align: center;
-		  color: #666666;
-}
+    #block-ourmission h2 {
+        font-size: 32px;
+        font-weight: 300;
+        text-align: center;
+        color: #666666;
+    }
 
-.our-mission-text{
+    .our-mission-text{
 
-		font-size: 34px;
-	  font-weight: 600;
-	  font-style: normal;
-	  font-stretch: normal;
-	  line-height: 0.94;
-	  letter-spacing: normal;
-	  text-align: center;
-	  color: #000000;
-}
+	font-size: 34px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.94;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+    }
 
-.our-mission-text-first{
+    .our-mission-text-first{
 	font-size: 18px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.78;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000000;
-}
+        font-weight: 300;
+        line-height: 1.78;
+        text-align: center;
+        color: #000000;
+    }
 
-.block-views-blockorganisers-block-1 h2, .block-views-blocksponsors-block-1 h2{
+    .block-views-blockorganisers-block-1 h2, .block-views-blocksponsors-block-1 h2{
 
-	  font-size: 34px;
-		  font-weight: 300;
-		  font-style: normal;
-		  font-stretch: normal;
-		  line-height: normal;
-		  letter-spacing: normal;
-		  text-align: center;
-		  color: #666666;
+        font-size: 34px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #666666;
 
-}
+    }
 
-	.views-element-container.form-group {
-    	display: none;
-	}
+    .views-element-container.form-group {
+        display: none;
+    }
 
 
-.block-views-blockorganisers-block-1 {
-	background-color: $brand-secondary;
-	margin: 0px -104px;
-}
-	.block-views-blocksponsors-block-1  , 
-	.block-views-blockorganisers-block-1{
-		padding-bottom: 20px;
-		text-align:center;
-		 .form-group{
-			width: 100%;
-			.view-sponsors , .view-organisers{
-				    margin: 10px 20px;
-				.view-content{
-					display:inline-block;
-					
-				}
-			}
+    .block-views-blockorganisers-block-1 {
+        background-color: $brand-secondary;
+        margin: 0px -104px;
+    }
+    .block-views-blocksponsors-block-1  ,  .block-views-blockorganisers-block-1{
+        padding-bottom: 20px;
+        text-align:center;
+        .form-group{
+            width: 100%;
+            .view-sponsors , .view-organisers{
+                 margin: 10px 20px;
+                 .view-content{
+                     display:inline-block;
+                 }
+             }
 
-			.view-sponsors{
-				.more-link.form-group a {
-				    border: solid 1px $btn-default-border;
-				    padding: 10px;
-				    font-size: 18px;
-					  font-weight: 300;
-					  font-style: normal;
-					  font-stretch: normal;
-					  line-height: normal;
-					  letter-spacing: -0.7px;
-					  text-align: center;
-					  color: #0078d7;
-				    text-decoration: unset;
-				    &:hover{
-				    	color:#0078d7;
-				    }
+             .view-sponsors{
+                 .more-link.form-group a {
+                     border: solid 1px $btn-default-border;
+                     padding: 10px;
+                     font-size: 18px;
+                     font-weight: 300;
+                     letter-spacing: -0.7px;
+                     text-align: center;
+                     color: #0078d7;
+                     text-decoration: unset;
+                     &:hover{
+                         color:#0078d7;
+                     }
+                     .more-link{
+                         margin-bottom:20px;
+                     }
+                 }
 
-				    .more-link{
-				    	margin-bottom:20px;
-				    }
-				}
+                 .views-view-grid .views-col{
+                     float: left;
+                     width: auto !important;
+                     margin: 20px;
 
-				.views-view-grid .views-col{
-						float: left;
-   						width: auto !important;
-   						margin: 20px;
-				
-				
-				
-				.views-field .field-content{
-					width: 202.5px;
-					height:202.5px;
-				    border-radius: 3px;
-				    border: solid 1px $btn-default-border;
-				    img{
-				    	margin: 80px 0px;
-    					padding: 0px 8px;
-    					text-align: center;
-    					display: inline-block;
-				    }
-				}
-			}
+                     .views-field .field-content{
+                         width: 202.5px;
+                         height:202.5px;
+                         border-radius: 3px;
+                         border: solid 1px $btn-default-border;
+                         img{
+                             margin: 80px 0px;
+                             padding: 0px 8px;
+                             text-align: center;
+                             display: inline-block;
+                         }
+                     }
+                 }
+             }
 
-			}
+             .view-organisers{
+                 .views-view-grid .views-col{
+                     float: left;
+                     width: auto !important;
+                     margin: 15px 25px;
+                     padding: 0px 25px;
+                     .views-field-field-photo{
+                         width: 135px;
+                         height:135px
+                     }
 
-			.view-organisers{
-				.views-view-grid .views-col{
-					    float: left;
-						width: auto !important;
-						margin: 15px 25px;
-						padding: 0px 25px;
-					.views-field-field-photo{
-						width: 135px;
-						height:135px
-					}
+                     .views-field-field-job-title{
+                         width: auto;
+                     }
 
-					.views-field-field-job-title{
-						width: auto;
-						}
+                     .field-content{
+                         font-size: 20px;
+                         font-weight: 300;
+                         text-align: center;
+                         color: $close-color;
+                         padding: 10px;
+                     }
 
-						.field-content{
-							font-size: 20px;
-							  font-weight: 300;
-							  font-style: normal;
-							  font-stretch: normal;
-							  line-height: normal;
-							  letter-spacing: normal;
-							  text-align: center;
-							  color: $close-color;
-							  padding: 10px;
-						}
-
-					.views-field-field-company-logo{
-						.field-content{
-							width: 130px;
-
-							img{
-								display:inline-block;
-							}
-						}
-
-					
-					} 
-			}
-		}
-
-			
-		} 
-	}
+                     .views-field-field-company-logo{
+                         .field-content{
+                             width: 130px;
+                             img{
+                                 display:inline-block;
+                             }
+                         }
+                     } 
+                 }
+             }	
+        } 
+    }
 }
