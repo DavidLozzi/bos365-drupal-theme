@@ -6478,11 +6478,11 @@ a.logo {
   text-transform: capitalize; }
   .homepage-slider-block .form-group .view-slider {
     /* 	.views-field-title{
-	       		float: left;
-    			text-align: left;
-    			display:block;
-    			padding:20px;
-	       	} */ }
+                 float: left;
+                 text-align: left;
+                 display:block;
+                 padding:20px;
+         } */ }
     .homepage-slider-block .form-group .view-slider .view-content {
       text-align: center;
       width: 100%; }
@@ -6514,9 +6514,6 @@ a.logo {
         font-family: "Segoe UI", "Open Sans", Arial;
         font-size: 13px;
         font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
         letter-spacing: -0.3px;
         text-align: center;
         color: #ffffff;
@@ -6526,9 +6523,6 @@ a.logo {
         font-family: "Segoe UI", "Open Sans", Arial;
         font-size: 20px;
         font-weight: 300;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
         letter-spacing: -0.5px;
         text-align: center;
         color: #ffffff;
@@ -6551,9 +6545,18 @@ a.logo {
       padding-top: 10px;
       padding-bottom: 13px; }
       .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-more-details a {
-        color: #ffff;
+        color: #ffffff;
         display: block;
         text-align: center; }
+
+.hero-banner-home img {
+  position: absolute;
+  width: 100vw;
+  left: -120px;
+  top: -20px;
+  z-index: -1;
+  min-height: 350px;
+  height: auto; }
 
 .hero-banner {
   height: 250px; }
@@ -6592,6 +6595,12 @@ a.logo {
       text-decoration: none;
       text-transform: none; }
 
+.hero-banner-blank {
+  margin-top: -100px !important;
+  margin-left: -120px !important;
+  height: 100px !important;
+  width: 100vw; }
+
 html * {
   font-family: "Segoe UI", "Open Sans", Arial;
   color: #000; }
@@ -6606,10 +6615,6 @@ html * {
 .main-container #block-ourmission h2 {
   font-size: 32px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: #666666; }
 
@@ -6626,10 +6631,7 @@ html * {
 .main-container .our-mission-text-first {
   font-size: 18px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.78;
-  letter-spacing: normal;
   text-align: center;
   color: #000000; }
 
@@ -6650,86 +6652,61 @@ html * {
   background-color: #eeeeee;
   margin: 0px -104px; }
 
-.main-container .block-views-blocksponsors-block-1,
-.main-container .block-views-blockorganisers-block-1 {
+.main-container .block-views-blocksponsors-block-1, .main-container .block-views-blockorganisers-block-1 {
   padding-bottom: 20px;
   text-align: center; }
-  .main-container .block-views-blocksponsors-block-1 .form-group,
-  .main-container .block-views-blockorganisers-block-1 .form-group {
+  .main-container .block-views-blocksponsors-block-1 .form-group, .main-container .block-views-blockorganisers-block-1 .form-group {
     width: 100%; }
-    .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors, .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers,
-    .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors,
-    .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers {
+    .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors, .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors, .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers {
       margin: 10px 20px; }
-      .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .view-content, .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .view-content,
-      .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .view-content,
-      .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .view-content {
+      .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .view-content, .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .view-content, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .view-content, .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .view-content {
         display: inline-block; }
-    .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a,
-    .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a {
+    .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a {
       border: solid 1px #ccc;
       padding: 10px;
       font-size: 18px;
       font-weight: 300;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
       letter-spacing: -0.7px;
       text-align: center;
       color: #0078d7;
       text-decoration: unset; }
-      .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a:hover,
-      .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a:hover {
+      .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a:hover, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a:hover {
         color: #0078d7; }
-      .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a .more-link,
-      .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a .more-link {
+      .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a .more-link, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a .more-link {
         margin-bottom: 20px; }
-    .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col,
-    .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .views-view-grid .views-col {
+    .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .views-view-grid .views-col {
       float: left;
       width: auto !important;
       margin: 20px; }
-      .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content,
-      .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content {
+      .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content {
         width: 202.5px;
         height: 202.5px;
         border-radius: 3px;
         border: solid 1px #ccc; }
-        .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content img,
-        .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content img {
+        .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content img, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content img {
           margin: 80px 0px;
           padding: 0px 8px;
           text-align: center;
           display: inline-block; }
-    .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .views-view-grid .views-col,
-    .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .views-view-grid .views-col {
+    .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .views-view-grid .views-col, .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .views-view-grid .views-col {
       float: left;
       width: auto !important;
       margin: 15px 25px;
       padding: 0px 25px; }
-      .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-photo,
-      .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-photo {
+      .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-photo, .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-photo {
         width: 135px;
         height: 135px; }
-      .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-job-title,
-      .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-job-title {
+      .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-job-title, .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-job-title {
         width: auto; }
-      .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .views-view-grid .views-col .field-content,
-      .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .views-view-grid .views-col .field-content {
+      .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .views-view-grid .views-col .field-content, .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .views-view-grid .views-col .field-content {
         font-size: 20px;
         font-weight: 300;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
         text-align: center;
         color: #000;
         padding: 10px; }
-      .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-company-logo .field-content,
-      .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-company-logo .field-content {
+      .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-company-logo .field-content, .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-company-logo .field-content {
         width: 130px; }
-        .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-company-logo .field-content img,
-        .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-company-logo .field-content img {
+        .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-company-logo .field-content img, .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .views-view-grid .views-col .views-field-field-company-logo .field-content img {
           display: inline-block; }
 
 .footer {
@@ -6945,10 +6922,10 @@ html * {
     padding-right: 0px; } }
 
 .full-width {
-  margin-left: -104px !important;
-  width: 100vw !important;
-  padding-left: 204px !important;
-  padding-right: 204px !important; }
+  margin-left: -104px;
+  width: 100vw;
+  padding-left: 204px;
+  padding-right: 204px; }
   .full-width h2 {
     text-align: center;
     font-family: "Segoe UI", "Open Sans", Arial;
@@ -7001,7 +6978,7 @@ html * {
   .upcoming-sessions .session {
     border-radius: 3px;
     background-color: #ffffff;
-    border: solid 1px #cccccc;
+    border: solid 1px #ccc;
     padding: 24.4px 19.8px 0px 31.8px;
     overflow: hidden;
     margin-bottom: 28.3px; }
@@ -7009,10 +6986,6 @@ html * {
     font-family: "Segoe UI", "Open Sans", Arial;
     font-size: 18px;
     font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: #000000;
     vertical-align: top; }
@@ -7022,25 +6995,25 @@ html * {
     text-align: right;
     margin-bottom: 10px; }
     .upcoming-sessions .details a {
+      font-family: "Segoe UI", "Open Sans", Arial;
       border-radius: 3px;
-      border: solid 1px #cccccc;
+      border: solid 1px #ccc;
       padding: 13px 66px 13px 66px;
       text-align: center;
-      color: #0078d7;
+      color: #333;
       margin-bottom: 5px; }
   .upcoming-sessions .resource-icons {
     text-align: right;
     margin-bottom: 10px; }
     .upcoming-sessions .resource-icons a {
       border-radius: 0px;
-      border: solid 0px #cccccc;
+      border: solid 0px #ccc;
       padding: 0px;
       text-align: center;
-      color: #0078d7;
+      color: #333;
       margin-bottom: 5px; }
   .upcoming-sessions .content {
     margin-top: 10px;
-    /*overflow:hidden;*/
     display: flex;
     align-items: center; }
   .upcoming-sessions .row {
@@ -7057,29 +7030,29 @@ html * {
     font-family: "Segoe UI", "Open Sans", Arial;
     font-size: 14px;
     font-weight: 300;
-    padding: 0px;
+    padding: 0px 5px 0px 0px;
     color: #000000; }
   .upcoming-sessions .description p {
     font-family: "Segoe UI", "Open Sans", Arial;
     font-size: 14px;
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
     color: #000000; }
 
 /**************************************************************************/
 .session-details .session {
   border-radius: 3px;
   background-color: #ffffff;
-  border: solid 1px #cccccc;
-  padding: 24.4px 19.8px 0px 31.8px;
+  border: solid 1px #ccc;
+  /* padding:24.4px 19.8px 0px 31.8px;*/
   overflow: hidden;
   margin-bottom: 0px; }
   .session-details .session .title {
-    font-family: SegoeUI;
+    font-family: "Segoe UI", "Open Sans", Arial;
     font-size: 32px;
     font-weight: 300;
     text-align: left;
-    color: #666666; }
+    color: #555555; }
 
 .session-details .content {
   margin-top: 10px;
@@ -7092,7 +7065,7 @@ html * {
 
 .session-details .label {
   text-transform: uppercase;
-  font-family: SegoeUI;
+  font-family: "Segoe UI", "Open Sans", Arial;
   font-size: 11px;
   font-weight: 600;
   text-align: left;
@@ -7101,22 +7074,30 @@ html * {
   margin-bottom: 10px; }
 
 .session-details .value {
-  font-family: SegoeUI;
+  font-family: "Segoe UI", "Open Sans", Arial;
   font-size: 14px;
   font-weight: 300;
   padding: 0px;
   color: #000000; }
 
 .session-details .event-description {
-  margin-bottom: 34px; }
+  margin-bottom: 34px;
+  font-family: "Segoe UI", "Open Sans", Arial;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.78;
+  text-align: justify;
+  color: #000000; }
 
-.session-details .map-marker i {
-  color: red;
+.session-details .map-marker svg {
   font-size: 24px;
-  margin-right: 5px; }
+  margin-right: 10px; }
+
+.session-details .map-marker svg path {
+  color: #e43f01; }
 
 .session-details .map-marker a {
-  font-family: SegoeUI;
+  font-family: "Segoe UI", "Open Sans", Arial;
   font-size: 18px;
   font-weight: 300;
   text-align: left;
@@ -7125,42 +7106,37 @@ html * {
 .session-details .speaker-details {
   background-color: #eeeeee;
   overflow: hidden; }
-
-.session-details .speaker-details .title {
-  font-family: SegoeUI;
-  font-size: 32px;
-  font-weight: 300;
-  text-align: center;
-  color: #666666; }
-
-.session-details .speaker-details .image {
-  border-radius: 75px;
-  border: 2px solid white;
-  width: 135px;
-  height: 135px;
-  margin: auto;
-  overflow: hidden;
-  display: flex;
-  align-items: center; }
-
-.session-details .speaker-details img {
-  margin: auto; }
-
-.session-details .speaker-details .name {
-  font-family: SegoeUI;
-  font-size: 34px;
-  font-weight: 300;
-  text-align: center;
-  color: #000000;
-  margin: auto; }
-
-.session-details .speaker-details .description {
-  font-family: SegoeUI;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.78;
-  text-align: center;
-  color: #000000; }
+  .session-details .speaker-details .title {
+    font-family: "Segoe UI", "Open Sans", Arial;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    color: #555555; }
+  .session-details .speaker-details .image {
+    border-radius: 75px;
+    border: 2px solid white;
+    width: 135px;
+    height: 135px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center; }
+  .session-details .speaker-details img {
+    margin: auto; }
+  .session-details .speaker-details .name {
+    font-family: "Segoe UI", "Open Sans", Arial;
+    font-size: 34px;
+    font-weight: 300;
+    text-align: center;
+    color: #000000;
+    margin: auto; }
+  .session-details .speaker-details .description {
+    font-family: "Segoe UI", "Open Sans", Arial;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.78;
+    text-align: center;
+    color: #000000; }
 
 .session-details .socio-icons {
   margin: 17px 0px 17px 0px;
@@ -7178,34 +7154,30 @@ html * {
 
 .session-details .resources {
   text-align: center; }
-
-.session-details .resources .header {
-  font-family: SegoeUI;
-  font-size: 32px;
-  font-weight: 300;
-  text-align: center;
-  color: #666666;
-  position: relative;
-  padding: 20px 0px; }
-
-.session-details .resources .resource {
-  margin: 0px 0px 30px 0px;
-  text-align: center; }
-
-.session-details .resources .resource a {
-  font-family: SegoeUI;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.78;
-  border-radius: 3px;
-  padding: 10px 50px 10px 50px;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
-  color: #0078d7; }
-
-.session-details .resources .resource a:hover {
-  background-color: #cccccc;
-  text-decoration: none; }
+  .session-details .resources .header {
+    font-family: "Segoe UI", "Open Sans", Arial;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    color: #555555;
+    position: relative;
+    padding: 20px 0px; }
+  .session-details .resources .resource {
+    margin: 0px 0px 30px 0px;
+    text-align: center; }
+    .session-details .resources .resource a {
+      font-family: "Segoe UI", "Open Sans", Arial;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.78;
+      border-radius: 3px;
+      padding: 10px 50px 10px 50px;
+      background-color: #fff;
+      border: solid 1px #ccc;
+      color: #333; }
+    .session-details .resources .resource a:hover {
+      background-color: #ccc;
+      text-decoration: none; }
 
 .session-details .video {
   background-color: #eeeeee;
@@ -7223,18 +7195,17 @@ html * {
     left: 0;
     width: 100%;
     height: 100%; }
-
-.session-details .video .header {
-  font-family: SegoeUI;
-  font-size: 32px;
-  font-weight: 300;
-  text-align: center;
-  color: #666666;
-  position: relative;
-  padding: 20px 0px; }
+  .session-details .video .header {
+    font-family: "Segoe UI", "Open Sans", Arial;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    color: #555555;
+    position: relative;
+    padding: 20px 0px; }
 
 .sponsor-det-latest .header {
-  font-family: SegoeUI;
+  font-family: "Segoe UI", "Open Sans", Arial;
   font-size: 32px;
   font-weight: 300;
   text-align: center;
@@ -7246,6 +7217,14 @@ html * {
   border: solid 1px #cccccc;
   padding: 20px;
   margin-bottom: 40px; }
+
+.sponsor-det-latest .description {
+  font-family: "Segoe UI", "Open Sans", Arial;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.86;
+  text-align: justify;
+  color: #000000; }
 
 .block-views-blockall-sponsors-block-1, .block-views-blockorganising-sponsors-block-1, .block-views-blocklatest-sponsor-block-1 {
   width: 100vw;
@@ -7318,18 +7297,19 @@ html * {
   text-align: center; }
   .sponsor-det .url a {
     border-radius: 3px;
-    border: solid 1px #cccccc;
+    border: solid 1px #ccc;
     padding: 10px 30px;
-    font-family: SegoeUI;
+    font-family: "Segoe UI", "Open Sans", Arial;
     font-size: 18px;
     font-weight: 300;
     letter-spacing: -0.7px;
     text-align: center;
-    color: #0078d7; }
+    color: #333;
+    background-color: #fff; }
   .sponsor-det .url a:hover {
     text-decoration: none;
-    background-color: #eeeeee;
-    color: red; }
+    background-color: #2d2522;
+    color: #333; }
 
 .sponsor-det-sessions {
   background-color: #eeeeee;

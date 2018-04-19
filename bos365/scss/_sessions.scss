@@ -1,8 +1,8 @@
 .full-width{    
-    margin-left: -$page-left-margin !important;
-    width: 100vw !important;
-    padding-left: $page-left-padding !important;
-    padding-right: $page-left-padding !important;
+    margin-left: -$page-left-margin ;
+    width: 100vw ;
+    padding-left: $page-left-padding ;
+    padding-right: $page-left-padding ;
     h2{
         text-align: center;
         font-family: $font-family-segoe;
@@ -89,6 +89,7 @@
         text-align:right;
         margin-bottom:10px;
         a{
+            font-family:$font-family-segoe;
             border-radius: 3px;
             border: solid 1px $btn-default-border;
             padding:13px 66px 13px 66px;
@@ -137,7 +138,7 @@
         font-family: $font-family-segoe;
         font-size: 14px;
         font-weight: 300;
-        padding:0px;
+        padding:0px 5px 0px 0px;
         color: #000000;
     }
 
@@ -145,7 +146,7 @@
         font-family: $font-family-segoe;
         font-size: 14px;
         font-weight: 300;
-        text-align: left;
+        text-align: justify;
         color: #000000;
     }
 }
@@ -159,7 +160,7 @@
         border-radius: 3px;
         background-color: #ffffff;
         border: solid 1px $btn-default-border;
-        padding:24.4px 19.8px 0px 31.8px;
+       /* padding:24.4px 19.8px 0px 31.8px;*/
         overflow:hidden;
         margin-bottom:0px;
 
@@ -204,12 +205,20 @@
     }
     .event-description{
         margin-bottom: 34px;
+        font-family: $font-family-segoe;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.78;
+        text-align: justify;
+        color: #000000;
     }
 
-    .map-marker i{
-        color:red;
+    .map-marker svg {
         font-size:24px;
-        margin-right:5px;
+        margin-right:10px;
+    }
+    .map-marker svg path{
+        color: $brand-tritary;
     }
 
     .map-marker a{

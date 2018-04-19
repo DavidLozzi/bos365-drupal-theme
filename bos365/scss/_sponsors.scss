@@ -14,6 +14,14 @@
         padding:20px;
         margin-bottom:40px;
     }
+    .description{
+        font-family: $font-family-segoe;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.86;
+        text-align: justify;
+        color: #000000;
+    }
 }
 
 .block-views-blockall-sponsors-block-1, .block-views-blockorganising-sponsors-block-1, .block-views-blocklatest-sponsor-block-1 {

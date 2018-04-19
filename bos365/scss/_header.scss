@@ -171,6 +171,17 @@ a.logo{
     }
 }
 
+.hero-banner-home{
+    img {
+        position:absolute;
+        width:100vw;
+        left:-120px;
+        top:-20px;
+        z-index:-1;
+        min-height:350px;
+        height:auto;
+    }
+}
 .hero-banner{
     height:250px;
     img {
@@ -222,4 +233,5 @@ a.logo{
     margin-top: -100px !important;
     margin-left: -120px !important;
     height: 100px !important;
+    width:100vw;
 }
