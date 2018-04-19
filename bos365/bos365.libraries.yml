@@ -2,19 +2,20 @@ framework:
   css:
     theme:
       css/style.css: {}
-  js:
-    bootstrap/assets/javascripts/bootstrap/affix.js: {}
-    bootstrap/assets/javascripts/bootstrap/alert.js: {}
-    bootstrap/assets/javascripts/bootstrap/button.js: {}
-    bootstrap/assets/javascripts/bootstrap/carousel.js: {}
-    bootstrap/assets/javascripts/bootstrap/collapse.js: {}
-    bootstrap/assets/javascripts/bootstrap/dropdown.js: {}
-    bootstrap/assets/javascripts/bootstrap/modal.js: {}
-    bootstrap/assets/javascripts/bootstrap/tooltip.js: {}
-    bootstrap/assets/javascripts/bootstrap/popover.js: {}
-    bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
-    bootstrap/assets/javascripts/bootstrap/tab.js: {}
-    bootstrap/assets/javascripts/bootstrap/transition.js: {}
+
+  #js:
+   # bootstrap/assets/javascripts/bootstrap/affix.js: {}
+   # bootstrap/assets/javascripts/bootstrap/alert.js: {}
+   # bootstrap/assets/javascripts/bootstrap/button.js: {}
+   # bootstrap/assets/javascripts/bootstrap/carousel.js: {}
+   # bootstrap/assets/javascripts/bootstrap/collapse.js: {}
+   # bootstrap/assets/javascripts/bootstrap/dropdown.js: {}
+   # bootstrap/assets/javascripts/bootstrap/modal.js: {}
+   # bootstrap/assets/javascripts/bootstrap/tooltip.js: {}
+   # bootstrap/assets/javascripts/bootstrap/popover.js: {}
+   # bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
+   # bootstrap/assets/javascripts/bootstrap/tab.js: {}
+   # bootstrap/assets/javascripts/bootstrap/transition.js: {}
 
 
     css:
@@ -22,13 +23,3 @@ framework:
       //fonts.googleapis.com/css?family=Open+Sans: { type: external }
 
 
-font-awesome:
-  remote: https://fortawesome.github.io/Font-Awesome/
-  version: 4.5.0
-  license:
-    name: MIT
-    url: https://fortawesome.github.io/Font-Awesome/license/
-    gpl-compatible: true
-  css:
-    theme:
-      https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css: { type: external, minified: true }
