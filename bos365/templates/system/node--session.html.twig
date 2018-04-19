@@ -100,19 +100,19 @@
       <div class="col-md-12 title">{{ node.label }}</div>
     </div>
     <div class="row">
-      <div class="col-md-12 event-description">{{content.body }}</div>
+      <div class="col-md-12 event-description">{{content.body.0 }}</div>
     </div>
     <div class="row content align-vtop">
       <div class="col-md-4 col-xs-12" >
         <div class="label col-md-12">LOCATION</div>
-        <div class="value col-md-12">{{content.field_venue }}</div>
-        <div class="map-marker"><i class="fa fa-map-marker"></i><a href="https://maps.google.com/?q={{content.field_venue.0['#text'] }}">Driving directions and Map &gt;</a></div>
+        <div class="value col-md-12">{{ content.field_venue }}</div>
+        <div class="map-marker"><i class="fa fa-map-marker"></i><a target="_new" href="https://maps.google.com/?q={{ content.field_venue.0 }}">Driving directions and Map &gt;</a></div>
       </div>
       <div class="col-md-4 col-xs-12" >       
         <div class="label col-md-12">Date</div>
         <div class="value col-md-12">{{ content.field_date }}</div>
       </div>
-      <div class="col-md-2 col-xs-12" >       
+      <div class="col-md-4 col-xs-12" >       
         <div class="label col-md-12">Sponsored By</div>
         {{ content.field_sponsor }}
       </div>
