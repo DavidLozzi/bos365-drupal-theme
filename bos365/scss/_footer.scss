@@ -1,31 +1,42 @@
-
-
-
 .footer{
 
-		background-color: #2d2522;
-	    font-family: SegoeUI;
-	    font-size: 18px;
-	    font-weight: 300;
-	    padding: 60px 0px;
-	    margin: 0px;
-	    color: $btn-primary-color;
-	.region.region-footer{
-		
+    background-color: #2d2522;
+    font-family: $font-family-segoe;
+    font-size: $font-size-base;
+    font-weight: 300;
+    padding: 60px 0px;
+    margin: 0px;
+    color: $btn-primary-color;
+    
+    .region.region-footer{
 
-	 span {
-	    	color: $btn-primary-color;
-    	}
+
+        span {
+            color: $btn-primary-color;
+        }
 
 	.info-links ul li {
 	    display: inline-block;
-	    padding: 0px 15px;
 	    margin: 0px;
 	    float: right;
 	    color: $btn-primary-color;
 	}
-
-}
+        
+	.info-links ul li.icon {
+            font-size:2em;
+	    padding: 0px 15px;
+        }
+	.info-links ul li.text {
+	    padding: 20px 15px;
+        }
+        .info-links li svg path{
+            color:#ffffff;            
+        }
+        
+        .Bostoncopywrite{
+            padding-top:20px;
+        }
+    }
 
 }
 li.mobile-enable {

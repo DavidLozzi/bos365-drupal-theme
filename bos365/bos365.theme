@@ -6,3 +6,34 @@
  *
  * Place your custom PHP code in this file.
  */
+
+use Drupal\node\Entity\Node;
+use Drupal\field\FieldConfigInterface;
+
+
+ 
+function bos365_preprocess_block(&$variables) {
+  if (in_array($variables['elements']['#id'], array('views_block__slider_block_1'))) {
+    $variables['attributes']['class'][] = 'homepage-slider-block row';
+    
+  }
+}
+
+
+// File: THEMENAME.theme in your theme's root directory
+function bos365_preprocess(&$variables, $hook)
+{
+    $variables['base_path'] = base_path();
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function bos365_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__'.$content_type;
+  }
+}
+
