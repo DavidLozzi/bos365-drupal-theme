@@ -21,8 +21,12 @@ html *
 
 .navbar-header {
   width: 100%;
-  height: auto;
+  height: 425px;
   float:left;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  .region-navigation{
+    padding: 32px 80px 0px 80px;
+  }
 }
 .mobile-subscr{
 	display:none;
@@ -45,7 +49,7 @@ html *
 
     }
     a {
-        padding: 30px 15px 30px 50px;
+        padding: 30px 15px 15px 50px;
         font-size: 18px;
         font-family: SegoeUI-Semilight;	
     } 
@@ -68,7 +72,9 @@ a.logo{
     
     .form-group{
 	.view-slider{
-            .view-content{
+        margin-top:35px;
+
+        .view-content{
 	       	text-align: center;
                 width: 100%;
 
@@ -175,27 +181,16 @@ a.logo{
     img {
         position:absolute;
         width:100vw;
-        left:-120px;
-        top:-20px;
+        left:0px;
+        top:0px;
         z-index:-1;
-        min-height:350px;
+        min-height:425px;
         height:auto;
     }
 }
 .hero-banner{
     height:250px;
-    img {
-        position:absolute;
-        width:100vw;
-        left:-120px;
-        top:-20px;
-        z-index:-1;
-        min-height:350px;
-        height:auto;
-    }
-    .image-container{
-        
-    }
+    
     .slogan-1, .slogan-1 p{
         font-family: $font-family-segoe;
         font-size: 32px;

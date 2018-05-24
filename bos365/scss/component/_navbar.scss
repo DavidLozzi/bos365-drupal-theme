@@ -8,6 +8,7 @@ $wide:            "screen and (min-width: #{$screen-lg-min})";
 $grid-breakpoint: "screen and (min-width: #{$grid-float-breakpoint})";
 
 body {
+  margin-top: 0px;
   // Fix horizontal scrolling on iOS devices.
   // https://www.drupal.org/node/1870076
   position: relative;
@@ -21,10 +22,7 @@ body {
   &.navbar-is-fixed-bottom {
     padding-bottom: ($navbar-height + ($grid-gutter-width / 2));
   }
-
-  @media #{$tablet} {
-    margin-top: ($grid-gutter-width / 2);
-  }
+ 
   @media #{$mobile} {
     &.toolbar-vertical {
       &.navbar-is-fixed-top,

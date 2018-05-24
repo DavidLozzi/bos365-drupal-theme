@@ -17,12 +17,13 @@ var options = minimist(process.argv.slice(2), {
   });
 
 var config = require('./bos365/config/' + options.config + '.config.js');
+var conn = ftp.create(config.FTP_CONNECTION);
 
 gulp.task('default', function() {
     if(options.deploy){
         runSequence('css','cssFtp','templatesFtp');
     }else if(options.watch){
-        runSequence('css',['cssFtp','templatesFtp'],'watchers');
+        runSequence('css','cssFtp','templatesFtp','watchers');
     }else{
         runSequence('css');
     }
@@ -44,8 +45,6 @@ function compileCss(){
 }
 
 function ftpCss(){
-    var conn = ftp.create(config.FTP_CONNECTION);
-
     var globs = ['bos365/css/style.css'];
     return gulp.src(globs, { base: '.', buffer: false})
     .pipe(conn.dest(config.FTP_PATH));
@@ -57,8 +56,6 @@ function watchers(){
 }
 
 function ftpTemplates(){
-    var conn = ftp.create(config.FTP_CONNECTION);
-
     var globs = ['bos365/templates/**/*'];
     return gulp.src(globs, { base: '.', buffer: false})
     .pipe(conn.dest(config.FTP_PATH));
