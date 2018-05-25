@@ -6463,8 +6463,7 @@ html * {
 
 .navbar-nav > li a {
   padding: 30px 15px 15px 50px;
-  font-size: 18px;
-  font-family: SegoeUI-Semilight; }
+  font-size: 18px; }
 
 a.logo {
   width: 113px;
@@ -6497,7 +6496,9 @@ a.logo {
     .homepage-slider-block .form-group .view-slider .bos365-slider-container .speaker-logo-align {
       justify-content: center;
       align-items: center;
-      margin-top: 46px; }
+      margin-top: 46px;
+      margin-left: -100px;
+      margin-right: -100px; }
     .homepage-slider-block .form-group .view-slider .bos365-slider-container .session-title {
       font-family: "Segoe UI", "Open Sans", Arial;
       font-size: 32px;
@@ -6510,8 +6511,10 @@ a.logo {
       color: #ffffff; }
     .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-speaker {
       text-align: center;
-      float: left;
-      padding: 20px; }
+      padding: 0px 20px;
+      display: inline-block;
+      width: 250px;
+      height: 80px; }
       .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-speaker .label {
         font-family: "Segoe UI", "Open Sans", Arial;
         font-size: 13px;
@@ -6530,14 +6533,13 @@ a.logo {
         color: #ffffff;
         padding: 5px; }
     .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-sponsor-logo {
-      width: 150px;
       height: 80px;
       background-color: #ffffff;
-      border: solid 1px #ffffff;
-      float: left; }
+      display: inline-block;
+      width: 250px;
+      padding-top: 10px; }
       .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-sponsor-logo img {
-        height: 24.9px;
-        margin-top: 28px; }
+        margin: auto; }
     .homepage-slider-block .form-group .view-slider .bos365-slider-container .slider-more-details {
       width: 180px;
       height: 50px;
