@@ -6562,34 +6562,43 @@ a.logo {
   min-height: 425px;
   height: auto; }
 
-.hero-banner {
-  height: 250px; }
-  .hero-banner .slogan-1, .hero-banner .slogan-1 p {
-    font-family: "Segoe UI", "Open Sans", Arial;
-    font-size: 32px;
-    font-weight: 300;
-    letter-spacing: -0.8px;
-    text-align: center;
+.hero-banner img {
+  position: absolute;
+  width: 100vw;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  min-height: 425px;
+  height: auto; }
+
+.hero-banner .slogan-1, .hero-banner .slogan-1 p {
+  font-family: "Segoe UI", "Open Sans", Arial;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: -0.8px;
+  text-align: center;
+  color: #eeeeee;
+  text-transform: none; }
+
+.hero-banner .slogan-2, .hero-banner .slogan-2 p {
+  font-family: "Segoe UI", "Open Sans", Arial;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2.22;
+  text-align: center;
+  color: #eeeeee;
+  text-transform: none; }
+
+.hero-banner .hero-link {
+  margin-top: 30px;
+  text-align: center; }
+  .hero-banner .hero-link a {
+    border-radius: 3px;
+    border: solid 1px #eeeeee;
+    padding: 10px;
     color: #eeeeee;
+    text-decoration: none;
     text-transform: none; }
-  .hero-banner .slogan-2, .hero-banner .slogan-2 p {
-    font-family: "Segoe UI", "Open Sans", Arial;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 2.22;
-    text-align: center;
-    color: #eeeeee;
-    text-transform: none; }
-  .hero-banner .hero-link {
-    margin-top: 30px;
-    text-align: center; }
-    .hero-banner .hero-link a {
-      border-radius: 3px;
-      border: solid 1px #eeeeee;
-      padding: 10px;
-      color: #eeeeee;
-      text-decoration: none;
-      text-transform: none; }
 
 .hero-banner-blank {
   margin-top: -100px !important;
@@ -6602,9 +6611,9 @@ html * {
   color: #000; }
 
 .main-container #block-ourmission {
+  margin-top: 15px;
   text-align: center;
-  margin-bottom: 5px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #eeeeee;
   background-color: 0 1px 0 #fff; }
 
@@ -6639,14 +6648,16 @@ html * {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #666666; }
+  color: #666666;
+  margin-top: 33px;
+  margin-bottom: 5px; }
 
 .main-container .views-element-container.form-group {
   display: none; }
 
 .main-container .block-views-blockorganisers-block-1 {
   background-color: #eeeeee;
-  margin: 0px -104px; }
+  margin-top: 20px; }
 
 .main-container .block-views-blocksponsors-block-1, .main-container .block-views-blockorganisers-block-1 {
   padding-bottom: 20px;
@@ -6657,19 +6668,19 @@ html * {
       margin: 10px 20px; }
       .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .view-content, .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .view-content, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .view-content, .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .view-content {
         display: inline-block; }
-    .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a {
-      border: solid 1px #ccc;
-      padding: 10px;
-      font-size: 18px;
-      font-weight: 300;
-      letter-spacing: -0.7px;
-      text-align: center;
-      color: #0078d7;
-      text-decoration: unset; }
-      .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a:hover, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a:hover {
-        color: #0078d7; }
-      .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a .more-link, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a .more-link {
-        margin-bottom: 20px; }
+    .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group {
+      margin-top: 13px; }
+      .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a {
+        border: solid 1px #ccc;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: -0.7px;
+        text-align: center;
+        color: #0078d7;
+        text-decoration: unset; }
+        .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a:hover, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a:hover {
+          color: #0078d7; }
     .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .views-view-grid .views-col {
       float: left;
       width: auto !important;
@@ -6678,12 +6689,18 @@ html * {
         width: 202.5px;
         height: 202.5px;
         border-radius: 3px;
-        border: solid 1px #ccc; }
+        border: solid 1px #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
         .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content img, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content img {
-          margin: 80px 0px;
-          padding: 0px 8px;
           text-align: center;
-          display: inline-block; }
+          display: inline-block;
+          max-width: 150px; }
+        .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content:hover img, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .views-view-grid .views-col .views-field .field-content:hover img {
+          -webkit-filter: grayscale(100%);
+          /* Chrome, Safari, Opera */
+          filter: grayscale(100%) opacity(50%); }
     .main-container .block-views-blocksponsors-block-1 .form-group .view-organisers .views-view-grid .views-col, .main-container .block-views-blockorganisers-block-1 .form-group .view-organisers .views-view-grid .views-col {
       float: left;
       width: auto !important;
@@ -6929,6 +6946,12 @@ html * {
     font-weight: 300;
     text-align: center;
     color: #777777; }
+
+.image-container.full-width {
+  margin-left: 0;
+  width: auto;
+  padding-left: 0;
+  padding-right: 0; }
 
 .filled-background {
   background-color: #eeeeee; }

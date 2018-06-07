@@ -190,9 +190,16 @@ a.logo{
         height:auto;
     }
 }
-.hero-banner{
-    height:250px;
-    
+.hero-banner{    
+    img {
+        position:absolute;
+        width:100vw;
+        left:0px;
+        top:0px;
+        z-index:-1;
+        min-height:425px;
+        height:auto;
+    }
     .slogan-1, .slogan-1 p{
         font-family: $font-family-segoe;
         font-size: 32px;

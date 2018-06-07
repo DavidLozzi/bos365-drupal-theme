@@ -14,6 +14,15 @@
     }
 }
 
+//Couldn't figure out how .full-width was appearing next to image-container on the sponsor page.
+//Using the below to override it's classes
+.image-container.full-width {
+    margin-left: 0;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .filled-background{
     background-color: $brand-secondary;
 }
