@@ -78,22 +78,9 @@ html *
                  .more-link.form-group
                  {
                      margin-top: 13px;
-
-                     a {
-                        border: solid 1px $btn-default-border;
-                        padding: 10px;
-                        font-size: 18px;
-                        font-weight: 300;
-                        letter-spacing: -0.7px;
-                        text-align: center;
-                        color: #0078d7;
-                        text-decoration: unset;
-                        width: 180px;
-                        display: inline-block;
-                        &:hover{
-                            color:#0078d7;
-                        }
-                    }
+                     a{
+                         @extend %blue-link-button;
+                     }
                  }
 
                  .views-view-grid .views-col{
@@ -102,22 +89,7 @@ html *
                      margin: 20px;
 
                      .views-field .field-content{
-                         width: 202.5px;
-                         height:202.5px;
-                         border-radius: 3px;
-                         border: solid 1px $btn-default-border;
-                         display: flex;
-                         justify-content: center;
-                         align-items: center;
-                         img{
-                             text-align: center;
-                             display: inline-block;
-                             max-width: 150px;
-                         }
-                         &:hover img{
-                             -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-                             filter: grayscale(100%) opacity(50%);
-                         }
+                         @extend %sponsor-tile;
                      }
                  }
              }

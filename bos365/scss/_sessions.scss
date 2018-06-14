@@ -1,6 +1,4 @@
 .full-width{    
-    margin-left: -$page-left-margin ;
-    width: 100vw ;
     padding-left: $page-left-padding ;
     padding-right: $page-left-padding ;
     h2{
@@ -37,11 +35,9 @@
     width: 100%;
 }
 .block-views-blockpast-sessions-block-1 {
-	background-color: $brand-secondary;
-        width: 100vw !important;
-	margin-left: -$page-left-margin;
-        padding-left:$page-left-padding;
-        padding-right:$page-left-padding;
+    background-color: $brand-secondary;
+    padding-left:$page-left-padding;
+    padding-right:$page-left-padding;
 	h2{
 		text-align: center;
 		font-family: $font-family-segoe;
@@ -49,15 +45,13 @@
   		font-weight: 300;
  		text-align: center;
   		color: $gray-light;
-
+        margin-bottom: 20px;
 	}
 }
 
 .block-views-blockupcoming-session-block-1 {
-	margin-left: -$page-left-margin;
-        width: 100vw !important;
-        padding-left:$page-left-padding;
-        padding-right:$page-left-padding;
+    padding-left:$page-left-padding;
+    padding-right:$page-left-padding;
 	h2{
 		text-align: center;
 		font-family: $font-family-segoe;
@@ -97,14 +91,9 @@
     .details{
         text-align:right;
         margin-bottom:10px;
+
         a{
-            font-family:$font-family-segoe;
-            border-radius: 3px;
-            border: solid 1px $btn-default-border;
-            padding:13px 66px 13px 66px;
-            text-align: center;
-            color: $btn-default-color;
-            margin-bottom:5px;
+            @extend %blue-link-button;
         }
     }
 
@@ -160,6 +149,16 @@
     }
 }
 
+.view-upcoming-session {
+    .view-empty{
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+}
+
+.view-past-sessions{
+    padding-bottom: 60px;
+}
 
 /**************************************************************************/
 .session-details {

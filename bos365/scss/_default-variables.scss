@@ -20,7 +20,7 @@ $brand-primary:         #2d2522 !default;
 $brand-secondary:       #eeeeee !default;
 $brand-tritary:         #e43f01 !default;
 $brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
+$brand-info:            #0078d7 !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #e43f01 !default;
 
@@ -35,9 +35,9 @@ $body-bg:               #fff !default;
 $text-color:            $gray-base !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            $brand-info !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      $brand-secondary !default;
+$link-hover-color:      darken($link-color, 50%) !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
 
@@ -877,7 +877,7 @@ $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 $hr-border:                   $gray-lighter !default;
 
 
-$page-left-padding: 204px;
-$page-left-margin: 104px;
+$page-left-padding: 230px;
+$page-left-margin: 230px;
 $button-hover-bg-color:$btn-primary-bg;
 $button-hover-text-color:$btn-default-color;
