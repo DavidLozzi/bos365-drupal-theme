@@ -1,0 +1,36 @@
+%sponsor-tile {
+    background-color: $white;
+    width: 202.5px;
+    height:202.5px;
+    border-radius: 3px;
+    border: solid 1px $btn-default-border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px 20px 20px;
+    img{
+        text-align: center;
+        display: inline-block;
+        max-width: 150px;
+    }
+    &:hover img{
+        -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+        filter: grayscale(100%) opacity(50%);
+    }   
+}
+
+%blue-link-button{
+    border: solid 1px $btn-default-border;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.7px;
+    text-align: center;
+    color: $link-color;
+    text-decoration: unset;
+    width: 180px;
+    display: inline-block;
+    &:hover{
+        color:$link-hover-color;
+    }
+}
