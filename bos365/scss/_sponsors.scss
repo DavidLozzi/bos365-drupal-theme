@@ -92,24 +92,10 @@
         color: #000000;
     }
     .url{	
-	margin:40px auto;
+	    margin:40px auto;
         text-align:center;
         a{
-            border-radius: 3px;
-            border: solid 1px $btn-default-border;
-            padding:10px 30px;	
-            font-family: $font-family-segoe;
-            font-size: 18px;
-            font-weight: 300;
-            letter-spacing: -0.7px;
-            text-align: center;
-            color:  $btn-default-color;
-            background-color: $btn-default-bg;
-        }
-        a:hover{
-            text-decoration: none;
-            background-color: $button-hover-bg-color;
-            color: $button-hover-text-color;
+            @extend %blue-link-button;
         }
     }  
 }

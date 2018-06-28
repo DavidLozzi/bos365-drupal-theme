@@ -18,18 +18,18 @@
     /* Chrome, Safari, Opera */
     filter: grayscale(100%) opacity(50%); }
 
-.main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a, .upcoming-sessions .details a {
+.main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a, .upcoming-sessions .details a, .sponsor-det .url a {
   border: solid 1px #ccc;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 18px;
   font-weight: 300;
   letter-spacing: -0.7px;
   text-align: center;
   color: #0078d7;
   text-decoration: unset;
-  width: 180px;
+  min-width: 180px;
   display: inline-block; }
-  .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a:hover, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a:hover, .upcoming-sessions .details a:hover {
+  .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a:hover, .main-container .block-views-blockorganisers-block-1 .form-group .view-sponsors .more-link.form-group a:hover, .upcoming-sessions .details a:hover, .sponsor-det .url a:hover {
     color: black; }
 
 /*!
@@ -7296,21 +7296,6 @@ html * {
 .sponsor-det .url {
   margin: 40px auto;
   text-align: center; }
-  .sponsor-det .url a {
-    border-radius: 3px;
-    border: solid 1px #ccc;
-    padding: 10px 30px;
-    font-family: "Segoe UI", "Open Sans", Arial;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: -0.7px;
-    text-align: center;
-    color: #333;
-    background-color: #fff; }
-  .sponsor-det .url a:hover {
-    text-decoration: none;
-    background-color: #2d2522;
-    color: #333; }
 
 .sponsor-det-sessions {
   background-color: #eeeeee;

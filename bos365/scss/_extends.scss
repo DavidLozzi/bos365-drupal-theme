@@ -21,14 +21,14 @@
 
 %blue-link-button{
     border: solid 1px $btn-default-border;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 18px;
     font-weight: 300;
     letter-spacing: -0.7px;
     text-align: center;
     color: $link-color;
     text-decoration: unset;
-    width: 180px;
+    min-width: 180px;
     display: inline-block;
     &:hover{
         color:$link-hover-color;
