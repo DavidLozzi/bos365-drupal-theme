@@ -46,7 +46,12 @@ p:last-child,
   margin-bottom: 0;
 }
 
-// Help region.
+html *
+{
+   font-family: $font-family-segoe;
+  color: $gray-base;
+}
+
 .region-help {
   > .glyphicon {
     font-size: $font-size-large;
@@ -76,4 +81,24 @@ p:last-child,
 
 article{
   margin-bottom: 50px;
+}
+
+h1, h2, h2, h4, h5 {
+  font-family: $font-family-segoe;
+  font-weight: 300;
+  color: $gray-light;
+}
+
+h1 {
+  font-size: 34px;
+  color: $gray-dark;
+}
+
+h2 {
+  font-size: 32px;
+  color: $gray-light;
+}
+
+h3 {
+  font-size: 28px;
 }
