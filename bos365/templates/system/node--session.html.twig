@@ -104,17 +104,18 @@
     <div class="row content align-vtop">
       <div class="col-md-4 col-xs-12" >
         <div class="label col-md-12">LOCATION</div>
-        <div class="value col-md-12">here:{{ content.field_venue.entity.label.value }}</div>
-        <div class="value col-md-12">{{ content.field_venue }}</div>
-        <div class="map-marker"><i class="fa fa-map-marker"></i><a target="_new" href="https://maps.google.com/?q={{ content.field_venue.0 }}">Driving directions and Map &gt;</a></div>
+          <div class="value col-md-12">{{ node.field_venue.entity.label }}</div>
+          <div class="value col-md-12">{{ node.field_venue.entity.field_street_address.value }}</div>
+        <div class="value col-md-12">{{ node.field_venue.entity.field_city.value }}, {{ node.field_venue.entity.field_state.value }} {{ node.field_venue.entity.field_zip.value }}</div>
+        <div class="map-marker"><i class="fa fa-map-marker"></i><a target="_new" href="https://maps.google.com/?q={{ node.field_venue.entity.field_street_address.value }} {{ node.field_venue.entity.field_city.value }} {{ node.field_venue.entity.field_state.value }} {{ node.field_venue.entity.field_zip.value }}">Driving directions and Map &gt;</a></div>
       </div>
       <div class="col-md-4 col-xs-12" >       
         <div class="label col-md-12">Date</div>
-        <div class="value col-md-12">{{ content.field_date }}</div>
+        <div class="value col-md-12">{{ node.field_date.value|date("l, F d, Y \\a\\t g:i a") }}</div>
       </div>
       <div class="col-md-4 col-xs-12" >       
         <div class="label col-md-12">Sponsored By</div>
-        {{ content.field_sponsor }}
+        <div class="value col-md-12">{{ node.field_sponsor.entity.field_logo.value }}</div>
       </div>
     </div>
   </div>

@@ -30,6 +30,7 @@
     text-decoration: unset;
     min-width: 180px;
     display: inline-block;
+    background-color: $white;
     &:hover{
         color:$link-hover-color;
     }
