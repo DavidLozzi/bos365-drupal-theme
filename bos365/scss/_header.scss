@@ -1,18 +1,44 @@
 .header-wrapper{
     margin-bottom: 20px;
+
+    .has-hero {
+        height: 425px;
+    
+        .navbar-header {
+            height: 425px;
+        }
+    }
+
+    .no-hero {
+        background-color: $gray-base;
+    }
+
+    h1, h3{
+        letter-spacing: -0.8px;
+        text-align: center;
+        color: $gray-lighter;
+        text-transform: none;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    h1{
+        font-size: 32px;
+        padding-top:100px
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+    
+    .button {
+        margin-top:60px;
+        text-align:center;
+        a{
+           @extend %white-link-button;
+        }
+    }
 }
-
-// .navbar-nav{
-// 	float :none;
-// 	height:auto;
-// }
-
-// .navbar{
-// 	margin-bottom:0px;
-// 	.navbar-collapse{
-// 		display:none !important;
-// 	}
-// }
 
 .navbar-header {
   width: 100%;
@@ -32,12 +58,13 @@
 .navbar-nav{
     width: 90%;
     padding-left: 45px;
-
+    float:right;
+    
     & > li { 
         margin-left: 10px;
         margin-right: 10px;
 
-        &.active {
+        &:hover, &.active {
             border-bottom: 2px solid $brand-tritary;
         }
 
@@ -70,7 +97,7 @@ a.logo{
 #block-bos365-main-menu{
     z-index: 1;
     position: relative;
-}
+} 
 .homepage-slider-block {
     
     text-transform: capitalize;
@@ -151,82 +178,13 @@ a.logo{
                 height: 80px;
             }
             .slider-more-details {
-                width: 180px;
-                height: 50px;
-                border-radius: 3px;
-                border: solid 1px $white;
                 margin: auto;
                 padding-top:10px;
                 padding-bottom:13px;
-
                 a{
-                    color: $white;
-                    display: block;
-                    text-align: center;
+                    @extend %white-link-button;
                 }
             }
         }
     }
-}
-
-.hero-banner {
-    position:absolute;
-    width:100%;
-    left:0px;
-    top:0px;
-    //z-index:-1;
-    min-height:425px;
-    height:auto;
-
-    img {
-        height: 425px;
-        position: absolute;
-        z-index: -1;
-    }
-    
-    .slogan-1, .slogan-1 p{
-        font-family: $font-family-segoe;
-        font-size: 32px;
-        font-weight: 300;
-        letter-spacing: -0.8px;
-        text-align: center;
-        color: $gray-lighter;
-        text-transform: none;
-        padding-top:100px
-    }
-    .slogan-2, .slogan-2 p{
-        font-family: $font-family-segoe;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 2.22;
-        text-align: center;
-        color: $gray-lighter;
-        text-transform: none;
-    }
-    
-    .hero-link {
-        margin-top:60px;
-        text-align:center;
-        a{
-            border-radius: 3px;
-            border: solid 1px $gray-lighter;
-            padding:10px;
-            color:$gray-lighter;
-            text-decoration: none;
-            text-transform: none;
-            width: 180px;
-            display:inline-block;
-        }
-    }
-}
-
-.block-views-blockdetail-page-hero-header-block-1 {
-    background-color: #2d2522;
-    width: 100%;
-    display: block;
-    height: 150px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -10;
 }

@@ -35,3 +35,18 @@
         color:$link-hover-color;
     }
 }
+
+%white-link-button{
+    border-radius: 3px;
+    border: solid 1px $gray-lighter;
+    padding:10px;
+    color:$gray-lighter;
+    text-decoration: none;
+    text-transform: none;
+    width: 180px;
+    display:inline-block;
+    &:hover{
+        background-color: $white;
+        color: $gray;
+    }
+}

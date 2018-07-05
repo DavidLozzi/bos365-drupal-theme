@@ -33,6 +33,19 @@
   .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group a:hover, .upcoming-sessions .details a:hover, .sponsor-det .url a:hover, #mc_embed_signup .button:hover {
     color: black; }
 
+.header-wrapper .button a, .homepage-slider-block .view-slider .bos365-slider-container .slider-more-details a {
+  border-radius: 3px;
+  border: solid 1px #eeeeee;
+  padding: 10px;
+  color: #eeeeee;
+  text-decoration: none;
+  text-transform: none;
+  width: 180px;
+  display: inline-block; }
+  .header-wrapper .button a:hover, .homepage-slider-block .view-slider .bos365-slider-container .slider-more-details a:hover {
+    background-color: #ffffff;
+    color: #555555; }
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6141,6 +6154,15 @@ body {
   font-size: 18px;
   text-transform: uppercase; }
 
+.navbar .logo {
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media screen and (min-width: 768px) {
+    .navbar .logo {
+      margin-right: 0;
+      padding-left: 0; } }
+
 /**
  * Node styling.
  */
@@ -6427,7 +6449,7 @@ html * {
 article {
   margin-bottom: 50px; }
 
-h1, h2, h2, h4, h5 {
+h1, h2, h3, h4, h5 {
   font-family: "Segoe UI", "Open Sans", Arial;
   font-weight: 300;
   color: #777777; }
@@ -6445,6 +6467,27 @@ h3 {
 
 .header-wrapper {
   margin-bottom: 20px; }
+  .header-wrapper .has-hero {
+    height: 425px; }
+    .header-wrapper .has-hero .navbar-header {
+      height: 425px; }
+  .header-wrapper .no-hero {
+    background-color: #000; }
+  .header-wrapper h1, .header-wrapper h3 {
+    letter-spacing: -0.8px;
+    text-align: center;
+    color: #eeeeee;
+    text-transform: none;
+    margin-left: 150px;
+    margin-right: 150px; }
+  .header-wrapper h1 {
+    font-size: 32px;
+    padding-top: 100px; }
+  .header-wrapper h3 {
+    font-size: 20px; }
+  .header-wrapper .button {
+    margin-top: 60px;
+    text-align: center; }
 
 .navbar-header {
   width: 100%;
@@ -6458,11 +6501,12 @@ h3 {
 
 .navbar-nav {
   width: 90%;
-  padding-left: 45px; }
+  padding-left: 45px;
+  float: right; }
   .navbar-nav > li {
     margin-left: 10px;
     margin-right: 10px; }
-    .navbar-nav > li.active {
+    .navbar-nav > li:hover, .navbar-nav > li.active {
       border-bottom: 2px solid #e43f01; }
     .navbar-nav > li:last-child {
       float: right;
@@ -6548,68 +6592,9 @@ a.logo {
       .homepage-slider-block .view-slider .bos365-slider-container .slider-sponsor-logo {
         height: 80px; }
       .homepage-slider-block .view-slider .bos365-slider-container .slider-more-details {
-        width: 180px;
-        height: 50px;
-        border-radius: 3px;
-        border: solid 1px #ffffff;
         margin: auto;
         padding-top: 10px;
         padding-bottom: 13px; }
-        .homepage-slider-block .view-slider .bos365-slider-container .slider-more-details a {
-          color: #ffffff;
-          display: block;
-          text-align: center; }
-
-.hero-banner {
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  top: 0px;
-  min-height: 425px;
-  height: auto; }
-  .hero-banner img {
-    height: 425px;
-    position: absolute;
-    z-index: -1; }
-  .hero-banner .slogan-1, .hero-banner .slogan-1 p {
-    font-family: "Segoe UI", "Open Sans", Arial;
-    font-size: 32px;
-    font-weight: 300;
-    letter-spacing: -0.8px;
-    text-align: center;
-    color: #eeeeee;
-    text-transform: none;
-    padding-top: 100px; }
-  .hero-banner .slogan-2, .hero-banner .slogan-2 p {
-    font-family: "Segoe UI", "Open Sans", Arial;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 2.22;
-    text-align: center;
-    color: #eeeeee;
-    text-transform: none; }
-  .hero-banner .hero-link {
-    margin-top: 60px;
-    text-align: center; }
-    .hero-banner .hero-link a {
-      border-radius: 3px;
-      border: solid 1px #eeeeee;
-      padding: 10px;
-      color: #eeeeee;
-      text-decoration: none;
-      text-transform: none;
-      width: 180px;
-      display: inline-block; }
-
-.block-views-blockdetail-page-hero-header-block-1 {
-  background-color: #2d2522;
-  width: 100%;
-  display: block;
-  height: 150px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -10; }
 
 html * {
   font-family: "Segoe UI", "Open Sans", Arial;
