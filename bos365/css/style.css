@@ -6158,10 +6158,6 @@ body {
   margin-right: -15px;
   padding-left: 15px;
   padding-right: 15px; }
-  @media screen and (min-width: 768px) {
-    .navbar .logo {
-      margin-right: 0;
-      padding-left: 0; } }
 
 /**
  * Node styling.
@@ -6445,6 +6441,10 @@ html * {
 .region-content {
   padding-left: 70px;
   padding-right: 70px; }
+  @media screen and (max-width: 767px) {
+    .region-content {
+      padding-left: 30px;
+      padding-right: 30px; } }
 
 article {
   margin-bottom: 50px; }
@@ -6465,6 +6465,10 @@ h2 {
 h3 {
   font-size: 28px; }
 
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0px; } }
+
 .header-wrapper {
   margin-bottom: 20px; }
   .header-wrapper .has-hero {
@@ -6480,9 +6484,16 @@ h3 {
     text-transform: none;
     margin-left: 150px;
     margin-right: 150px; }
+    @media screen and (max-width: 767px) {
+      .header-wrapper h1, .header-wrapper h3 {
+        margin-left: 15px;
+        margin-right: 15px; } }
   .header-wrapper h1 {
     font-size: 32px;
     padding-top: 100px; }
+    @media screen and (max-width: 767px) {
+      .header-wrapper h1 {
+        padding: 10px; } }
   .header-wrapper h3 {
     font-size: 20px; }
   .header-wrapper .button {
@@ -6496,6 +6507,9 @@ h3 {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); }
   .navbar-header .region-navigation {
     padding: 32px 80px 40px 80px; }
+    @media screen and (max-width: 767px) {
+      .navbar-header .region-navigation {
+        padding: 10px; } }
   .navbar-header .block-views {
     max-height: 425px; }
 
@@ -6665,11 +6679,18 @@ html * {
           align-items: center;
           justify-content: center;
           height: 70px; }
+          @media screen and (max-width: 767px) {
+            .main-container .block-views-blockorganisers-block-1 .view-organisers .views-view-grid .views-col .views-field-field-company-logo .field-content {
+              height: inherit; } }
         .main-container .block-views-blockorganisers-block-1 .view-organisers .views-view-grid .views-col .views-field-field-company-logo img {
           max-height: 60px;
           max-width: 150px;
           height: auto;
           width: auto; }
+          @media screen and (max-width: 767px) {
+            .main-container .block-views-blockorganisers-block-1 .view-organisers .views-view-grid .views-col .views-field-field-company-logo img {
+              max-height: 50px;
+              max-width: 75px; } }
   .main-container .block-views-blocksponsors-block-1 {
     padding-bottom: 20px;
     text-align: center; }
@@ -6679,12 +6700,18 @@ html * {
         margin: 10px 20px; }
         .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .view-content {
           display: inline-block; }
+        @media screen and (max-width: 767px) {
+          .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors {
+            margin: 10px 0px; } }
       .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .more-link.form-group {
         margin-top: 13px; }
       .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col {
         float: left;
         width: auto !important;
         margin: 20px; }
+        @media screen and (max-width: 767px) {
+          .main-container .block-views-blocksponsors-block-1 .form-group .view-sponsors .views-view-grid .views-col {
+            float: none; } }
 
 .footer {
   background-color: #2d2522;
@@ -6710,6 +6737,9 @@ html * {
     color: #ffffff; }
   .footer .region.region-footer .Bostoncopywrite {
     padding-top: 20px; }
+    @media screen and (max-width: 767px) {
+      .footer .region.region-footer .Bostoncopywrite {
+        text-align: center; } }
   .footer .region.region-footer a, .footer .region.region-footer a:visited, .footer .region.region-footer a:active, .footer .region.region-footer a:link {
     color: #ffffff; }
 

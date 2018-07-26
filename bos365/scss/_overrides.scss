@@ -77,6 +77,11 @@ html *
 .region-content{
   padding-left: 70px;
   padding-right: 70px;
+
+  @media #{$mobile}{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 article{
@@ -101,4 +106,10 @@ h2 {
 
 h3 {
   font-size: 28px;
+}
+
+.container {
+  @media #{$mobile}{
+    padding: 0px;
+  }
 }

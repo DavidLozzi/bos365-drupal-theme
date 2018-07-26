@@ -20,11 +20,20 @@
         text-transform: none;
         margin-left: 150px;
         margin-right: 150px;
+        
+        @media #{$mobile}{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
     }
 
     h1{
         font-size: 32px;
-        padding-top:100px
+        padding-top:100px;
+        
+        @media #{$mobile}{
+            padding: 10px;
+        }
     }
 
     h3 {
@@ -48,6 +57,10 @@
 
   .region-navigation{
     padding: 32px 80px 40px 80px;
+    
+    @media #{$mobile}{
+        padding: 10px;
+    }
   }
   
   .block-views {
