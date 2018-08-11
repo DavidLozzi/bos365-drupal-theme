@@ -48,7 +48,7 @@ p:last-child,
 
 html *
 {
-   font-family: $font-family-segoe;
+  font-family: $font-family-segoe;
   color: $gray-base;
 }
 
@@ -101,7 +101,11 @@ h1 {
 
 h2 {
   font-size: 32px;
-  color: $gray-light;
+  font-weight: 300;
+
+  @media #{$mobile}{
+      font-size: 26px;
+  }
 }
 
 h3 {

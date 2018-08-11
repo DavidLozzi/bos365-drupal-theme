@@ -1,7 +1,10 @@
 .full-width{    
     padding-left: $page-left-padding ;
     padding-right: $page-left-padding ;
-
+    @media #{$mobile}{
+        padding-left:$page-left-padding-mobile;
+        padding-right:$page-left-padding-mobile;
+    }
 }
 //Couldn't figure out how .full-width was appearing next to image-container on the sponsor page.
 //Using the below to override it's classes
@@ -25,10 +28,27 @@
     vertical-align: top;
     width: 100%;
 }
+
+.block-views-blockupcoming-session-block-1 {
+    padding-left:$page-left-padding;
+    padding-right:$page-left-padding;
+    @media #{$mobile}{
+        padding-left:$page-left-padding-mobile;
+        padding-right:$page-left-padding-mobile;
+    }
+	h2{
+		text-align: center;
+	}
+}
+
 .block-views-blockpast-sessions-block-1 {
     background-color: $brand-secondary;
     padding-left:$page-left-padding;
     padding-right:$page-left-padding;
+    @media #{$mobile}{
+        padding-left:$page-left-padding-mobile;
+        padding-right:$page-left-padding-mobile;
+    } 
 	h2{
 		text-align: center;
 		font-family: $font-family-segoe;
@@ -37,20 +57,6 @@
  		text-align: center;
   		color: $gray-light;
         margin-bottom: 20px;
-	}
-}
-
-.block-views-blockupcoming-session-block-1 {
-    padding-left:$page-left-padding;
-    padding-right:$page-left-padding;
-	h2{
-		text-align: center;
-		font-family: $font-family-segoe;
-  		font-size: 32px;
-  		font-weight: 300;
- 		text-align: center;
-  		color: $gray-light;
-
 	}
 }
 
@@ -72,7 +78,7 @@
         font-size: 18px;
         font-weight: 600;
         text-align: left;
-        color: #000000;
+        color: $gray-base;
         vertical-align:top;
         img {
             max-width:150px;
@@ -82,6 +88,11 @@
     .details{
         text-align:right;
         margin-bottom:10px;
+
+        @media #{$mobile}{
+            text-align: center;
+            margin-top: 20px;
+        } 
 
         a{
             @extend %blue-link-button;
@@ -128,7 +139,7 @@
         font-size: 14px;
         font-weight: 300;
         padding:0px 5px 0px 0px;
-        color: #000000;
+        color: $gray-base;
     }
 
     .description p{
@@ -136,7 +147,7 @@
         font-size: 14px;
         font-weight: 300;
         text-align: justify;
-        color: #000000;
+        color: $gray-base;
     }
 }
 
@@ -183,9 +194,13 @@
         font-size: 11px;
         font-weight: 600;
         text-align: left;
-        color: #999999;
+        color: $gray-light;
         padding:0px;
         margin-bottom: 10px;
+        @media #{$mobile}{
+            margin-top: 30px;
+            display: block;
+        }
     }
 
     .value {
@@ -193,7 +208,7 @@
         font-size: 14px;
         font-weight: 300;
         padding:0px;
-        color: #000000;
+        color: $gray-base;
     }
     .event-description{
         margin-bottom: 34px;
@@ -202,7 +217,7 @@
         font-weight: 300;
         line-height: 1.78;
         text-align: justify;
-        color: #000000;
+        color: $gray-base;
     }
 
     .map-marker {
@@ -254,7 +269,7 @@
             font-size: 34px;
             font-weight: 300;
             text-align: center;
-            color: #000000;
+            color: $gray-base;
             margin:auto;
         }
         
@@ -264,7 +279,7 @@
             font-weight: 300;
             line-height: 1.78;
             text-align: center;
-            color: #000000;
+            color: $gray-base;
             margin-top: 10px;
             margin-bottom: 50px;
         }
@@ -274,7 +289,7 @@
         margin: 17px 0px 17px 0px;
         text-align: center;
         .icon-div{
-            background-color: #000000;
+            background-color: $gray-base;
             border-radius: 20px;
             margin-right: 10px;
             margin-left: 10px;

@@ -33,6 +33,7 @@
         
         @media #{$mobile}{
             padding: 10px;
+            font-size: 28px;
         }
     }
 
@@ -46,73 +47,19 @@
         a{
            @extend %white-link-button;
         }
-    }
-}
-
-.navbar-header {
-  width: 100%;
-  max-height: 430px;
-  min-height: 150px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
-
-  .region-navigation{
-    padding: 32px 80px 40px 80px;
-    
-    @media #{$mobile}{
-        padding: 10px;
-    }
-  }
-  
-  .block-views {
-    max-height: 425px;
-  }
-}
-
-.navbar-nav{
-    width: 90%;
-    padding-left: 45px;
-    float:right;
-    
-    & > li { 
-        margin-left: 10px;
-        margin-right: 10px;
-
-        &:hover, &.active {
-            border-bottom: 2px solid $brand-tritary;
+        @media #{$mobile}{
+            margin-top: 45px;
         }
+    }
 
-        &:last-child {
-            float: right;
-            border-radius: 3px;
-            background-color: $white;
-            border: solid 1px $white;
-            color: $gray-base;
-            margin-top: 20px;
-            position: relative;
-            .is-active, a {
-                color: $gray-base;
-                text-transform: initial;
-                padding: 10px;
-            }
-
+    .headerHero {
+        @media #{$mobile}{
+            margin-top: 95px;
         }
-        a {
-            padding: 30px 30px 15px 30px;
-            font-size: 18px;
-        } 
     }
 }
 
-a.logo{
-    z-index: 1;
-    position: relative;
-}
-#block-bos365-main-menu{
-    z-index: 1;
-    position: relative;
-} 
 .homepage-slider-block {
-    
     text-transform: capitalize;
     
 	.view-slider {
@@ -135,7 +82,7 @@ a.logo{
             }
         }
         .bos365-slider-container{
-            width: 1350px;
+            //width: 1350px; 
             
             .speaker-logo-align{	
                 margin-top: 46px;
@@ -144,6 +91,11 @@ a.logo{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @media #{$mobile}{
+                    margin-top: 30px;
+                    margin-left: 0;
+                    margin-right: 0;
+                } 
             }
 
             .session-title{
@@ -158,6 +110,13 @@ a.logo{
                 color: $white;
                 padding-left: 200px;
                 padding-right: 200px;
+                @media #{$mobile}{
+                    font-size: 24px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
             }
 
             .slider-speaker{
@@ -166,6 +125,9 @@ a.logo{
                 display: inline-block;
                 width: 250px;
                 height: 80px;
+                @media #{$mobile}{
+                    width: 50%;
+                }
                 .label{
                     font-family: $font-family-segoe;
                     font-size: 13px;
@@ -184,6 +146,9 @@ a.logo{
                     text-align: center;
                     color: $white;
                     padding:5px;
+                    @media #{$mobile}{
+                        font-size: 16px;
+                    }
                 }
             }
             .slider-sponsor-logo{
@@ -201,3 +166,4 @@ a.logo{
         }
     }
 }
+

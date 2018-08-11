@@ -1,9 +1,3 @@
-html *
-{
-   font-family: $font-family-segoe;
-  color: $gray-base;
-}
-
 .main-container{
     min-height: 500px;
 
@@ -16,10 +10,7 @@ html *
     }
 
     #block-ourmission h2 {
-        font-size: 32px;
-        font-weight: 300;
         text-align: center;
-        color: #666666;
     }
 
     .our-mission-text{
@@ -30,15 +21,19 @@ html *
         line-height: 0.94;
         letter-spacing: normal;
         text-align: center;
-        color: #000000;
+        color: $gray-base;
+
+        @media #{$mobile}{
+            font-size: 28px;
+        }
     }
 
-    .our-mission-text-first{
-	font-size: 18px;
+    .our-mission-text-first {
+	    font-size: 18px;
         font-weight: 300;
         line-height: 1.78;
         text-align: center;
-        color: #000000;
+        color: $gray-base;
     }
 
     .block-views-blockorganisers-block-1 h2, .block-views-blocksponsors-block-1 h2{

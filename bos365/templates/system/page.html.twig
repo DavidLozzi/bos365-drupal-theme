@@ -82,36 +82,34 @@
             <header{{ navbar_attributes.addClass(navbar_classes, headerHero.class) }} id="navbar" role="banner" style="background-image: url({{ headerHero.url }})">
               <div class="navbar-header">
               
-                {{ page.navigation }}
-                {# .btn-navbar is used as the toggle for collapsed navbar content #}
+                {# Navigation (collapsible) #}
                 {% if page.navigation_collapsible %}
-                  <button type="button" class="navbar navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                  <div id="navbar-collapse" class="navbar-collapse collapse">
+                  {{ page.navigation_collapsible }}
+                  </div>
+                {% endif %}
+                <button type="button" class="navbar navbar-toggle" onclick="toggleMenu()">
                     <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                  </button>
-                {% endif %}
-
+                </button>
+                {{ page.navigation }}
                 
-                {% if headerHero.title %}
-                  <h1>{{ headerHero.title }}</h1>
-                {% endif %}
-                {% if headerHero.subtitle %}
-                  <h3>{{ headerHero.subtitle }}</h3>
-                {% endif %}
-                
-                {% if headerHero.button and headerHero.buttonUrl %}
-                  <div class="button"><a href="{{headerHero.buttonUrl}}">{{ headerHero.button }}</a></div>
-                {% endif %}
+                <div class="headerHero">
+                  {% if headerHero.title %}
+                    <h1>{{ headerHero.title }}</h1>
+                  {% endif %}
+                  {% if headerHero.subtitle %}
+                    <h3>{{ headerHero.subtitle }}</h3>
+                  {% endif %}
+                  
+                  {% if headerHero.button and headerHero.buttonUrl %}
+                    <div class="button"><a href="{{headerHero.buttonUrl}}">{{ headerHero.button }}</a></div>
+                  {% endif %}
+                </div>
               </div>
 
-              {# Navigation (collapsible) #}
-              {% if page.navigation_collapsible %}
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                 {{ page.navigation_collapsible }}
-                </div>
-              {% endif %}
             </header>
           </div>
         </div>

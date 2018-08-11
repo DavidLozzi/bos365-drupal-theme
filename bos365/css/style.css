@@ -6154,10 +6154,99 @@ body {
   font-size: 18px;
   text-transform: uppercase; }
 
+.navbar-header {
+  width: 100%;
+  max-height: 430px;
+  min-height: 150px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); }
+  .navbar-header .region-navigation {
+    padding: 32px 80px 40px 80px; }
+    @media screen and (max-width: 767px) {
+      .navbar-header .region-navigation {
+        padding: 10px; } }
+  .navbar-header .block-views {
+    max-height: 425px; }
+
+.navbar-default .navbar-nav {
+  width: 90%;
+  padding-left: 45px;
+  float: right; }
+  @media screen and (max-width: 767px) {
+    .navbar-default .navbar-nav {
+      background-color: #ffffff;
+      z-index: 10;
+      position: relative;
+      margin-top: -27px;
+      float: right;
+      padding-left: 20px; } }
+  @media screen and (max-width: 767px) {
+    .navbar-default .navbar-nav > .active > a {
+      color: #000; } }
+  .navbar-default .navbar-nav > li {
+    margin-left: 10px;
+    margin-right: 10px; }
+    .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > li.active {
+      border-bottom: 2px solid #e43f01; }
+      @media screen and (max-width: 767px) {
+        .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > li.active {
+          border-bottom: 0; } }
+    .navbar-default .navbar-nav > li:last-child {
+      float: right;
+      border-radius: 3px;
+      background-color: #ffffff;
+      border: solid 1px #ffffff;
+      color: #000;
+      margin-top: 20px;
+      position: relative; }
+      .navbar-default .navbar-nav > li:last-child .is-active, .navbar-default .navbar-nav > li:last-child a {
+        color: #000;
+        text-transform: initial;
+        padding: 10px; }
+        @media screen and (max-width: 767px) {
+          .navbar-default .navbar-nav > li:last-child .is-active, .navbar-default .navbar-nav > li:last-child a {
+            text-transform: uppercase;
+            padding: 0; } }
+      @media screen and (max-width: 767px) {
+        .navbar-default .navbar-nav > li:last-child {
+          padding: 30px 0px 15px 10px;
+          float: none;
+          position: initial;
+          margin-top: 0; } }
+    .navbar-default .navbar-nav > li > a {
+      padding: 30px 30px 15px 10px;
+      font-size: 18px; }
+      @media screen and (max-width: 767px) {
+        .navbar-default .navbar-nav > li > a {
+          color: #000; } }
+
 .navbar .logo {
   margin-right: -15px;
   padding-left: 15px;
   padding-right: 15px; }
+
+.navbar-toggle {
+  padding: 5px 10px;
+  margin-top: 25px; }
+
+@media screen and (max-width: 767px) {
+  #block-bos365-main-menu {
+    z-index: 1;
+    position: relative;
+    display: none; }
+    #block-bos365-main-menu.showMenu {
+      display: block; } }
+
+.navbar-collapse.collapse {
+  display: none !important; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff; }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ffffff; }
+  .navbar-default .navbar-toggle:hover .icon-bar,
+  .navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #000; }
 
 /**
  * Node styling.
@@ -6460,7 +6549,10 @@ h1 {
 
 h2 {
   font-size: 32px;
-  color: #777777; }
+  font-weight: 300; }
+  @media screen and (max-width: 767px) {
+    h2 {
+      font-size: 26px; } }
 
 h3 {
   font-size: 28px; }
@@ -6493,58 +6585,19 @@ h3 {
     padding-top: 100px; }
     @media screen and (max-width: 767px) {
       .header-wrapper h1 {
-        padding: 10px; } }
+        padding: 10px;
+        font-size: 28px; } }
   .header-wrapper h3 {
     font-size: 20px; }
   .header-wrapper .button {
     margin-top: 60px;
     text-align: center; }
-
-.navbar-header {
-  width: 100%;
-  max-height: 430px;
-  min-height: 150px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); }
-  .navbar-header .region-navigation {
-    padding: 32px 80px 40px 80px; }
     @media screen and (max-width: 767px) {
-      .navbar-header .region-navigation {
-        padding: 10px; } }
-  .navbar-header .block-views {
-    max-height: 425px; }
-
-.navbar-nav {
-  width: 90%;
-  padding-left: 45px;
-  float: right; }
-  .navbar-nav > li {
-    margin-left: 10px;
-    margin-right: 10px; }
-    .navbar-nav > li:hover, .navbar-nav > li.active {
-      border-bottom: 2px solid #e43f01; }
-    .navbar-nav > li:last-child {
-      float: right;
-      border-radius: 3px;
-      background-color: #ffffff;
-      border: solid 1px #ffffff;
-      color: #000;
-      margin-top: 20px;
-      position: relative; }
-      .navbar-nav > li:last-child .is-active, .navbar-nav > li:last-child a {
-        color: #000;
-        text-transform: initial;
-        padding: 10px; }
-    .navbar-nav > li a {
-      padding: 30px 30px 15px 30px;
-      font-size: 18px; }
-
-a.logo {
-  z-index: 1;
-  position: relative; }
-
-#block-bos365-main-menu {
-  z-index: 1;
-  position: relative; }
+      .header-wrapper .button {
+        margin-top: 45px; } }
+  @media screen and (max-width: 767px) {
+    .header-wrapper .headerHero {
+      margin-top: 95px; } }
 
 .homepage-slider-block {
   text-transform: capitalize; }
@@ -6559,60 +6612,72 @@ a.logo {
         margin: auto; }
         .homepage-slider-block .view-slider .view-content .views_slideshow_cycle_teaser_section .views_slideshow_slide {
           margin: auto; }
-    .homepage-slider-block .view-slider .bos365-slider-container {
-      width: 1350px; }
-      .homepage-slider-block .view-slider .bos365-slider-container .speaker-logo-align {
-        margin-top: 46px;
-        margin-left: -100px;
-        margin-right: -100px;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-      .homepage-slider-block .view-slider .bos365-slider-container .session-title {
+    .homepage-slider-block .view-slider .bos365-slider-container .speaker-logo-align {
+      margin-top: 46px;
+      margin-left: -100px;
+      margin-right: -100px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      @media screen and (max-width: 767px) {
+        .homepage-slider-block .view-slider .bos365-slider-container .speaker-logo-align {
+          margin-top: 30px;
+          margin-left: 0;
+          margin-right: 0; } }
+    .homepage-slider-block .view-slider .bos365-slider-container .session-title {
+      font-family: "Segoe UI", "Open Sans", Arial;
+      font-size: 32px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -0.8px;
+      text-align: center;
+      color: #ffffff;
+      padding-left: 200px;
+      padding-right: 200px; }
+      @media screen and (max-width: 767px) {
+        .homepage-slider-block .view-slider .bos365-slider-container .session-title {
+          font-size: 24px;
+          padding-left: 10px;
+          padding-right: 10px;
+          margin-left: 20px;
+          margin-right: 20px; } }
+    .homepage-slider-block .view-slider .bos365-slider-container .slider-speaker {
+      text-align: center;
+      padding: 0px 20px;
+      display: inline-block;
+      width: 250px;
+      height: 80px; }
+      @media screen and (max-width: 767px) {
+        .homepage-slider-block .view-slider .bos365-slider-container .slider-speaker {
+          width: 50%; } }
+      .homepage-slider-block .view-slider .bos365-slider-container .slider-speaker .label {
         font-family: "Segoe UI", "Open Sans", Arial;
-        font-size: 32px;
-        font-weight: 300;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: -0.8px;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: -0.3px;
         text-align: center;
         color: #ffffff;
-        padding-left: 200px;
-        padding-right: 200px; }
-      .homepage-slider-block .view-slider .bos365-slider-container .slider-speaker {
+        text-transform: uppercase;
+        padding: 5px; }
+      .homepage-slider-block .view-slider .bos365-slider-container .slider-speaker .title {
+        font-family: "Segoe UI", "Open Sans", Arial;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: -0.5px;
         text-align: center;
-        padding: 0px 20px;
-        display: inline-block;
-        width: 250px;
-        height: 80px; }
-        .homepage-slider-block .view-slider .bos365-slider-container .slider-speaker .label {
-          font-family: "Segoe UI", "Open Sans", Arial;
-          font-size: 13px;
-          font-weight: bold;
-          letter-spacing: -0.3px;
-          text-align: center;
-          color: #ffffff;
-          text-transform: uppercase;
-          padding: 5px; }
-        .homepage-slider-block .view-slider .bos365-slider-container .slider-speaker .title {
-          font-family: "Segoe UI", "Open Sans", Arial;
-          font-size: 20px;
-          font-weight: 300;
-          letter-spacing: -0.5px;
-          text-align: center;
-          color: #ffffff;
-          padding: 5px; }
-      .homepage-slider-block .view-slider .bos365-slider-container .slider-sponsor-logo {
-        height: 80px; }
-      .homepage-slider-block .view-slider .bos365-slider-container .slider-more-details {
-        margin: auto;
-        padding-top: 10px;
-        padding-bottom: 13px; }
-
-html * {
-  font-family: "Segoe UI", "Open Sans", Arial;
-  color: #000; }
+        color: #ffffff;
+        padding: 5px; }
+        @media screen and (max-width: 767px) {
+          .homepage-slider-block .view-slider .bos365-slider-container .slider-speaker .title {
+            font-size: 16px; } }
+    .homepage-slider-block .view-slider .bos365-slider-container .slider-sponsor-logo {
+      height: 80px; }
+    .homepage-slider-block .view-slider .bos365-slider-container .slider-more-details {
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 13px; }
 
 .main-container {
   min-height: 500px; }
@@ -6623,10 +6688,7 @@ html * {
     border-bottom: 1px solid #eeeeee;
     background-color: 0 1px 0 #fff; }
   .main-container #block-ourmission h2 {
-    font-size: 32px;
-    font-weight: 300;
-    text-align: center;
-    color: #666666; }
+    text-align: center; }
   .main-container .our-mission-text {
     font-size: 34px;
     font-weight: 600;
@@ -6635,13 +6697,16 @@ html * {
     line-height: 0.94;
     letter-spacing: normal;
     text-align: center;
-    color: #000000; }
+    color: #000; }
+    @media screen and (max-width: 767px) {
+      .main-container .our-mission-text {
+        font-size: 28px; } }
   .main-container .our-mission-text-first {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.78;
     text-align: center;
-    color: #000000; }
+    color: #000; }
   .main-container .block-views-blockorganisers-block-1 h2, .main-container .block-views-blocksponsors-block-1 h2 {
     margin-top: 33px;
     margin-bottom: 5px; }
@@ -6754,6 +6819,10 @@ li.mobile-enable {
 .full-width {
   padding-left: 230px;
   padding-right: 230px; }
+  @media screen and (max-width: 767px) {
+    .full-width {
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .image-container.full-width {
   margin-left: 0;
@@ -6772,10 +6841,24 @@ li.mobile-enable {
   vertical-align: top;
   width: 100%; }
 
+.block-views-blockupcoming-session-block-1 {
+  padding-left: 230px;
+  padding-right: 230px; }
+  @media screen and (max-width: 767px) {
+    .block-views-blockupcoming-session-block-1 {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  .block-views-blockupcoming-session-block-1 h2 {
+    text-align: center; }
+
 .block-views-blockpast-sessions-block-1 {
   background-color: #eeeeee;
   padding-left: 230px;
   padding-right: 230px; }
+  @media screen and (max-width: 767px) {
+    .block-views-blockpast-sessions-block-1 {
+      padding-left: 20px;
+      padding-right: 20px; } }
   .block-views-blockpast-sessions-block-1 h2 {
     text-align: center;
     font-family: "Segoe UI", "Open Sans", Arial;
@@ -6784,17 +6867,6 @@ li.mobile-enable {
     text-align: center;
     color: #777777;
     margin-bottom: 20px; }
-
-.block-views-blockupcoming-session-block-1 {
-  padding-left: 230px;
-  padding-right: 230px; }
-  .block-views-blockupcoming-session-block-1 h2 {
-    text-align: center;
-    font-family: "Segoe UI", "Open Sans", Arial;
-    font-size: 32px;
-    font-weight: 300;
-    text-align: center;
-    color: #777777; }
 
 .upcoming-sessions {
   width: 100%;
@@ -6811,13 +6883,17 @@ li.mobile-enable {
     font-size: 18px;
     font-weight: 600;
     text-align: left;
-    color: #000000;
+    color: #000;
     vertical-align: top; }
     .upcoming-sessions .heading img {
       max-width: 150px; }
   .upcoming-sessions .details {
     text-align: right;
     margin-bottom: 10px; }
+    @media screen and (max-width: 767px) {
+      .upcoming-sessions .details {
+        text-align: center;
+        margin-top: 20px; } }
   .upcoming-sessions .resource-icons {
     text-align: right;
     margin-bottom: 10px; }
@@ -6847,13 +6923,13 @@ li.mobile-enable {
     font-size: 14px;
     font-weight: 300;
     padding: 0px 5px 0px 0px;
-    color: #000000; }
+    color: #000; }
   .upcoming-sessions .description p {
     font-family: "Segoe UI", "Open Sans", Arial;
     font-size: 14px;
     font-weight: 300;
     text-align: justify;
-    color: #000000; }
+    color: #000; }
 
 .view-upcoming-session .view-empty {
   margin-top: 100px;
@@ -6885,16 +6961,20 @@ li.mobile-enable {
   font-size: 11px;
   font-weight: 600;
   text-align: left;
-  color: #999999;
+  color: #777777;
   padding: 0px;
   margin-bottom: 10px; }
+  @media screen and (max-width: 767px) {
+    .session-details .label {
+      margin-top: 30px;
+      display: block; } }
 
 .session-details .value {
   font-family: "Segoe UI", "Open Sans", Arial;
   font-size: 14px;
   font-weight: 300;
   padding: 0px;
-  color: #000000; }
+  color: #000; }
 
 .session-details .event-description {
   margin-bottom: 34px;
@@ -6903,7 +6983,7 @@ li.mobile-enable {
   font-weight: 300;
   line-height: 1.78;
   text-align: justify;
-  color: #000000; }
+  color: #000; }
 
 .session-details .map-marker {
   margin-top: 10px;
@@ -6943,7 +7023,7 @@ li.mobile-enable {
     font-size: 34px;
     font-weight: 300;
     text-align: center;
-    color: #000000;
+    color: #000;
     margin: auto; }
   .session-details .speaker-details .description {
     font-family: "Segoe UI", "Open Sans", Arial;
@@ -6951,7 +7031,7 @@ li.mobile-enable {
     font-weight: 300;
     line-height: 1.78;
     text-align: center;
-    color: #000000;
+    color: #000;
     margin-top: 10px;
     margin-bottom: 50px; }
 
@@ -6959,7 +7039,7 @@ li.mobile-enable {
   margin: 17px 0px 17px 0px;
   text-align: center; }
   .session-details .socio-icons .icon-div {
-    background-color: #000000;
+    background-color: #000;
     border-radius: 20px;
     margin-right: 10px;
     margin-left: 10px;
@@ -7047,7 +7127,7 @@ li.mobile-enable {
   font-weight: 300;
   line-height: 1.86;
   text-align: justify;
-  color: #000000; }
+  color: #000; }
 
 .block-views-blockall-sponsors-block-1, .block-views-blockorganising-sponsors-block-1, .block-views-blocklatest-sponsor-block-1 {
   display: flex;
@@ -7098,7 +7178,7 @@ li.mobile-enable {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.78;
-  color: #000000; }
+  color: #000; }
 
 .sponsor-det .url {
   margin: 40px auto;
