@@ -6609,7 +6609,10 @@ h3 {
       .homepage-slider-block .view-slider .view-content p {
         color: #fff; }
       .homepage-slider-block .view-slider .view-content .views_slideshow_cycle_teaser_section {
-        margin: auto; }
+        margin: 0 100px; }
+        @media screen and (max-width: 767px) {
+          .homepage-slider-block .view-slider .view-content .views_slideshow_cycle_teaser_section {
+            margin: 0; } }
         .homepage-slider-block .view-slider .view-content .views_slideshow_cycle_teaser_section .views_slideshow_slide {
           margin: auto; }
     .homepage-slider-block .view-slider .bos365-slider-container .speaker-logo-align {

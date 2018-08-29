@@ -73,7 +73,11 @@
                 color : $btn-primary-color;
             }
             .views_slideshow_cycle_teaser_section{
-                margin:auto;
+                margin: 0 100px;
+
+                @media #{$mobile}{
+                    margin: 0;
+                }
 
                 .views_slideshow_slide {
                         margin:auto;

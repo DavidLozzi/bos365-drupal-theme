@@ -135,31 +135,33 @@
       <h2>Registration coming soon</h2>
     </div>
     {% else %}
-    <div class="eventbrite">
-      <h2>Register</h2>
-      <div class="description">You can join us in person or online!</div>
+      {% if "now"|date('Y-m-d') < node.field_date.value|date('Y-m-d') %}
+        <div class="eventbrite">
+          <h2>Register</h2>
+          <div class="description">You can join us in person or online!</div>
 
-      <div id="eventbrite-widget-container"></div>
+          <div id="eventbrite-widget-container"></div>
 
-      <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+          <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
-      <script type="text/javascript">
-          var exampleCallback = function() {
-              console.log('Order complete!');
-          };
+          <script type="text/javascript">
+              var exampleCallback = function() {
+                  console.log('Order complete!');
+              };
 
-          window.EBWidgets.createWidget({
-              // Required
-              widgetType: 'checkout',
-              eventId: '{{content.field_event.0}}',
-              iframeContainerId: 'eventbrite-widget-container',
+              window.EBWidgets.createWidget({
+                  // Required
+                  widgetType: 'checkout',
+                  eventId: '{{content.field_event.0}}',
+                  iframeContainerId: 'eventbrite-widget-container',
 
-              // Optional
-              iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-              onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-          });
-      </script>
-    </div>
+                  // Optional
+                  iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                  onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+              });
+          </script>
+        </div>
+      {% endif %}
     {% endif %}
 
     {% if content.field_speaker_presentation_link.0['#url'] and content.field_speaker_presentation.0 == "" and content.field_bos365_presentation.0 == "" %}     
