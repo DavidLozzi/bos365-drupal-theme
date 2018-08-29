@@ -37,19 +37,19 @@
     height:           430px;
   }
 
-  @media screen and (min-width: $screen-sm-min) {
-    padding-top:    ($jumbotron-padding * 1.6);
-    padding-bottom: ($jumbotron-padding * 1.6);
+  // @media screen and (min-width: $screen-sm-min) {
+  //   padding-top:    ($jumbotron-padding * 1.6);
+  //   padding-bottom: ($jumbotron-padding * 1.6);
 
-    .container &,
-    .container-fluid & {
-      padding-left:  ($jumbotron-padding * 2);
-      padding-right: ($jumbotron-padding * 2);
-    }
+  //   .container &,
+  //   .container-fluid & {
+  //     padding-left:  ($jumbotron-padding * 2);
+  //     padding-right: ($jumbotron-padding * 2);
+  //   }
 
-    h1,
-    .h1 {
-      font-size: $jumbotron-heading-font-size;
-    }
-  }
+  //   h1,
+  //   .h1 {
+  //     font-size: $jumbotron-heading-font-size;
+  //   }
+  // }
 }

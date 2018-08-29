@@ -20,7 +20,7 @@ $brand-primary:         #2d2522 !default;
 $brand-secondary:       #eeeeee !default;
 $brand-tritary:         #e43f01 !default;
 $brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
+$brand-info:            #0078d7 !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #e43f01 !default;
 
@@ -35,9 +35,9 @@ $body-bg:               #fff !default;
 $text-color:            $gray-base !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            $brand-info !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      $brand-secondary !default;
+$link-hover-color:      darken($link-color, 50%) !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
 
@@ -324,6 +324,10 @@ $screen-xs-max:              ($screen-sm-min - 1) !default;
 $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
 
+$mobile:          "screen and (max-width: #{$screen-xs-max})";
+$tablet:          "screen and (min-width: #{$screen-sm-min})";
+$normal:          "screen and (min-width: #{$screen-md-min})";
+$wide:            "screen and (min-width: #{$screen-lg-min})";
 
 //== Grid system
 //
@@ -355,7 +359,7 @@ $container-desktop:            (940px + $grid-gutter-width) !default;
 $container-md:                 $container-desktop !default;
 
 // Large screen / wide desktop
-$container-large-desktop:      (1140px + $grid-gutter-width) !default;
+$container-large-desktop:      (1440px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop !default;
 
@@ -876,8 +880,9 @@ $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
 
-
-$page-left-padding: 204px;
-$page-left-margin: 104px;
+$page-left-padding: 230px;
+$page-left-margin: 230px;
+$page-left-padding-mobile: 20px;
+$page-left-margin-mobile: 20px;
 $button-hover-bg-color:$btn-primary-bg;
 $button-hover-text-color:$btn-default-color;

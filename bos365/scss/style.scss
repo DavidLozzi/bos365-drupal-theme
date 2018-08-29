@@ -1,6 +1,9 @@
 // Default variables.
 @import "default-variables";
 
+// extends used throughout
+@import "extends";
+
 // Bootstrap Framework.
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
 
@@ -13,11 +16,9 @@
 
 @import 'footer';
 
-@import 'responsive';
-
 @import 'sessions';
 
 @import 'sponsors';
 
-
+@import 'forms';
 

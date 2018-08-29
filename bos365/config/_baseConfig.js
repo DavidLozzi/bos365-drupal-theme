@@ -7,7 +7,9 @@ module.exports = {
     FTP_CONNECTION: {
             host: 'the.server.name.com',
             user: 'username',
-            pass: 'p@ssw0rd'
+            pass: 'p@ssw0rd',
+            secure: true,
+            secureOptions: {"rejectUnauthorized":false}
         },
     FTP_PATH: '/path/to/root/of/theme/folder'
 }

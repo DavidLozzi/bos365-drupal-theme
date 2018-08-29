@@ -46,7 +46,12 @@ p:last-child,
   margin-bottom: 0;
 }
 
-// Help region.
+html *
+{
+  font-family: $font-family-segoe;
+  color: $gray-base;
+}
+
 .region-help {
   > .glyphicon {
     font-size: $font-size-large;
@@ -66,5 +71,49 @@ p:last-child,
   padding: 0;
   &:first-child {
     margin-top: 0;
+  }
+}
+
+.region-content{
+  padding-left: 70px;
+  padding-right: 70px;
+
+  @media #{$mobile}{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+article{
+  margin-bottom: 50px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-family-segoe;
+  font-weight: 300;
+  color: $gray-light;
+}
+
+h1 {
+  font-size: 34px;
+  color: $gray-dark;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 300;
+
+  @media #{$mobile}{
+      font-size: 26px;
+  }
+}
+
+h3 {
+  font-size: 28px;
+}
+
+.container {
+  @media #{$mobile}{
+    padding: 0px;
   }
 }
