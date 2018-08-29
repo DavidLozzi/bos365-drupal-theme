@@ -1,3 +1,4 @@
 /node_modules
 /bos365/css/**/*
 *.config.js
+package-lock.json
