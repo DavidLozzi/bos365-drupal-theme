@@ -13,6 +13,12 @@
         border: solid 1px #cccccc;
         padding:20px;
         margin-bottom:40px;
+        
+        @media #{$mobile}{
+            img {
+                margin: 20px auto;
+            }
+        }
     }
     .description{
         font-family: $font-family-segoe;
@@ -30,6 +36,11 @@
     justify-content: center;
     padding-left:$page-left-padding;
     padding-right:$page-left-padding;
+    
+    @media #{$mobile} {
+        padding-left:$page-left-padding-mobile;
+        padding-right:$page-left-padding-mobile;
+    }
 
     h2{
             text-align: center;
@@ -58,6 +69,11 @@
 
 	 .sponsor{
         @extend %sponsor-tile;
+        
+        @media #{$mobile}{
+            margin: 10px auto;
+        }
+        
 	}
 }
 
@@ -84,7 +100,7 @@
         color: #666666;
     }
     .description{
-	text-align: justify;
+	    text-align: justify;
         font-family: $font-family-segoe;
         font-size: 18px;
         font-weight: 300;
@@ -119,6 +135,11 @@
 	background-color: $brand-secondary;
     padding-left:$page-left-padding;
     padding-right:$page-left-padding;
+    @media #{$mobile} {
+        padding-left:$page-left-padding-mobile;
+        padding-right:$page-left-padding-mobile;
+    }
+
 	h2{
 		text-align: center;
 		font-family: $font-family-segoe;

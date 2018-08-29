@@ -7120,6 +7120,9 @@ li.mobile-enable {
   border: solid 1px #cccccc;
   padding: 20px;
   margin-bottom: 40px; }
+  @media screen and (max-width: 767px) {
+    .sponsor-det-latest .details img {
+      margin: 20px auto; } }
 
 .sponsor-det-latest .description {
   font-family: "Segoe UI", "Open Sans", Arial;
@@ -7135,6 +7138,10 @@ li.mobile-enable {
   justify-content: center;
   padding-left: 230px;
   padding-right: 230px; }
+  @media screen and (max-width: 767px) {
+    .block-views-blockall-sponsors-block-1, .block-views-blockorganising-sponsors-block-1, .block-views-blocklatest-sponsor-block-1 {
+      padding-left: 20px;
+      padding-right: 20px; } }
   .block-views-blockall-sponsors-block-1 h2, .block-views-blockorganising-sponsors-block-1 h2, .block-views-blocklatest-sponsor-block-1 h2 {
     text-align: center;
     font-family: "Segoe UI", "Open Sans", Arial;
@@ -7153,6 +7160,10 @@ li.mobile-enable {
   text-align: center;
   color: #777777;
   margin: 20px 0px 20px 0px; }
+
+@media screen and (max-width: 767px) {
+  .sponsor-det-list .sponsor, .sponsor-det-org .sponsor {
+    margin: 10px auto; } }
 
 .block-views-blockall-sponsors-block-1 {
   background-color: #eeeeee; }
@@ -7199,6 +7210,10 @@ li.mobile-enable {
   background-color: #eeeeee;
   padding-left: 230px;
   padding-right: 230px; }
+  @media screen and (max-width: 767px) {
+    .block-views-blocksponsor-session-block-1 {
+      padding-left: 20px;
+      padding-right: 20px; } }
   .block-views-blocksponsor-session-block-1 h2 {
     text-align: center;
     font-family: "Segoe UI", "Open Sans", Arial;
