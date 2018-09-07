@@ -7,33 +7,34 @@
         padding-bottom: 50px;
         border-bottom: 1px solid $brand-secondary;
         background-color: $close-text-shadow;
-    }
 
-    #block-ourmission h2 {
-        text-align: center;
-    }
-
-    .our-mission-text{
-	    font-size: 34px;
-        font-weight: 600;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 0.94;
-        letter-spacing: normal;
-        text-align: center;
-        color: $gray-base;
-
-        @media #{$mobile}{
-            font-size: 28px;
+        h2.block-title {
+            text-align: center;
         }
-    }
+        .field {
+            h2 {
+                font-size: 34px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.94;
+                letter-spacing: normal;
+                text-align: center;
+                color: $gray-base;
 
-    .our-mission-text-first {
-	    font-size: 18px;
-        font-weight: 300;
-        line-height: 1.78;
-        text-align: center;
-        color: $gray-base;
+                @media #{$mobile}{
+                    font-size: 28px;
+                }
+            }
+            h3{
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 1.78;
+                text-align: center;
+                color: $gray-base;
+
+            }
+        }
     }
 
     .block-views-blockorganisers-block-1 h2, .block-views-blocksponsors-block-1 h2{

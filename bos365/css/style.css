@@ -6213,11 +6213,12 @@ body {
           position: initial;
           margin-top: 0; } }
     .navbar-default .navbar-nav > li > a {
-      padding: 30px 30px 15px 10px;
+      padding: 30px 30px 15px 30px;
       font-size: 18px; }
       @media screen and (max-width: 767px) {
         .navbar-default .navbar-nav > li > a {
-          color: #000; } }
+          color: #000;
+          padding-left: 10px; } }
 
 .navbar .logo {
   margin-right: -15px;
@@ -6690,26 +6691,26 @@ h3 {
     padding-bottom: 50px;
     border-bottom: 1px solid #eeeeee;
     background-color: 0 1px 0 #fff; }
-  .main-container #block-ourmission h2 {
-    text-align: center; }
-  .main-container .our-mission-text {
-    font-size: 34px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 0.94;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000; }
-    @media screen and (max-width: 767px) {
-      .main-container .our-mission-text {
-        font-size: 28px; } }
-  .main-container .our-mission-text-first {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.78;
-    text-align: center;
-    color: #000; }
+    .main-container #block-ourmission h2.block-title {
+      text-align: center; }
+    .main-container #block-ourmission .field h2 {
+      font-size: 34px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 0.94;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000; }
+      @media screen and (max-width: 767px) {
+        .main-container #block-ourmission .field h2 {
+          font-size: 28px; } }
+    .main-container #block-ourmission .field h3 {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.78;
+      text-align: center;
+      color: #000; }
   .main-container .block-views-blockorganisers-block-1 h2, .main-container .block-views-blocksponsors-block-1 h2 {
     margin-top: 33px;
     margin-bottom: 5px; }
@@ -6927,7 +6928,7 @@ li.mobile-enable {
     font-weight: 300;
     padding: 0px 5px 0px 0px;
     color: #000; }
-  .upcoming-sessions .description p {
+  .upcoming-sessions .description p, .upcoming-sessions .description li {
     font-family: "Segoe UI", "Open Sans", Arial;
     font-size: 14px;
     font-weight: 300;
@@ -7086,7 +7087,6 @@ li.mobile-enable {
       text-decoration: none; }
 
 .session-details .video {
-  background-color: #eeeeee;
   overflow: hidden;
   text-align: center;
   padding-bottom: 10px; }

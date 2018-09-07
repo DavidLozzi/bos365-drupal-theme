@@ -142,12 +142,14 @@
         color: $gray-base;
     }
 
-    .description p{
-        font-family: $font-family-segoe;
-        font-size: 14px;
-        font-weight: 300;
-        text-align: justify;
-        color: $gray-base;
+    .description {
+        p, li {
+            font-family: $font-family-segoe;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: justify;
+            color: $gray-base;
+        }
     }
 }
 
@@ -342,8 +344,7 @@
         }
     }
 
-    .video{
-        background-color:#eeeeee;
+    .video {
         overflow:hidden;
         text-align:center;
         padding-bottom:10px;
