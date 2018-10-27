@@ -164,12 +164,38 @@
       {% endif %}
     {% endif %}
 
-    {% if content.field_speaker_presentation_link.0['#url'] and content.field_speaker_presentation.0 == "" and content.field_bos365_presentation.0 == "" %}     
+    {% if content.field_speaker_presentation_link.0['#url'] or content.field_speaker_presentation.0 != "" or content.field_bos365_presentation.0 != "" %}     
     <div class="resources">
       <div class="header">Resources</div>
+        {% if content.field_speaker_presentation_link.0['#url'] != "" %}
+        <div class="resource">
+            <a href="{{ content.field_speaker_presentation_link.0['#url'] }}" target="_blank">
+                {% if (content.field_speaker_presentation_link.0['#url'] ends with '.ppt') %}
+                    <i class="fa fa-file-powerpoint-o"></i>
+                {% endif %}
+                {% if (content.field_speaker_presentation_link.0['#url'] ends with '.pdf') %}
+                    <i class="fa fa-file-pdf-o"></i>
+                {% endif %}
+                Speaker Presentation
+            </a>
+        </div>
+        {% endif %}
+        {% if content.field_speaker_presentation.0 != "" %}            
+        <div class="resource">
+            <a href="{{ content.field_speaker_presentation.0 }}" target="_blank">
+                {% if content.field_speaker_presentation.0 ends with 'ppt' %}
+                    <i class="fa fa-file-powerpoint-o"></i>
+                {% endif %}
+                {% if content.field_speaker_presentation.0 ends with 'pdf' %}
+                    <i class="fa fa-file-pdf-o"></i>
+                {% endif %}
+                Speaker Presentation
+            </a>
+        </div>
+        {% endif %}
         {% if content.field_bos365_presentation.0 != "" %}            
         <div class="resource">
-            <a href="{{ content.field_bos365_presentation.0 }}">
+            <a href="{{ content.field_bos365_presentation.0 }}" target="_blank">
                 {% if content.field_bos365_presentation.0 ends with 'ppt' %}
                     <i class="fa fa-file-powerpoint-o"></i>
                 {% endif %}
@@ -179,23 +205,6 @@
                 Bos365 Presentation
             </a>
         </div>
-        {% endif %}
-        {% if content.field_speaker_presentation_link.0['#url'] != "" %}
-        <div class="resource">
-            <a href="{{ content.field_speaker_presentation_link.0['#url'] }}">
-                {% if (content.field_speaker_presentation_link.0['#url'] ends with '.ppt') %}
-                    <i class="fa fa-file-powerpoint-o"></i>
-                {% endif %}
-                {% if (content.field_speaker_presentation_link.0['#url'] ends with '.pdf') %}
-                    <i class="fa fa-file-pdf-o"></i>
-                {% endif %}
-                <!-- <img src="/themes/contrib/bos365/images/ppt.png"> --> 
-                Speaker Presentation
-            </a>
-        </div>
-        {% endif %}
-        {% if content..field_speaker_presentation.0 != "" %}
-        <div class="resource"><a href="{{ content.field_speaker_presentation.0 }}"><!-- <img src="/themes/contrib/bos365/images/ppt.png"> -->Speaker Presentation</a></div>
         {% endif %}
     </div>
     {% endif %}

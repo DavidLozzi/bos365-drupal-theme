@@ -19,11 +19,22 @@
 // jQuery UI style overrides.
 @import "jquery-ui/autocomplete";
 
+html *
+{
+  font-family: $font-family-segoe;
+  color: $gray-base;
+}
+
 ol, ul {
   padding-left: 1.5em;
   .popover &:last-child {
     margin-bottom: 0;
   }
+}
+
+a {
+  color: $brand-info;
+  text-decoration: underline;
 }
 
 // Page header.
@@ -44,12 +55,6 @@ p:last-child,
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
-}
-
-html *
-{
-  font-family: $font-family-segoe;
-  color: $gray-base;
 }
 
 .region-help {
@@ -92,6 +97,10 @@ h1, h2, h3, h4, h5 {
   font-family: $font-family-segoe;
   font-weight: 300;
   color: $gray-light;
+
+  a {
+    color: $gray-light;
+  }
 }
 
 h1 {

@@ -103,6 +103,8 @@ body {
         & > a {
             padding: 30px 30px 15px 30px;
             font-size: 18px;
+            text-decoration: none;
+            
             @media #{$mobile} {
               color: $gray-base;
               padding-left: 10px;
