@@ -3,6 +3,8 @@
 
     .has-hero {
         height: 425px;
+        background-position: center;
+        background-size: cover;
     
         .navbar-header {
             height: 425px;
@@ -54,7 +56,7 @@
 
     .headerHero {
         @media #{$mobile}{
-            margin-top: 95px;
+            margin-top: 125px;
         }
     }
 }

@@ -64,6 +64,10 @@
                 margin: 15px 25px;
                 padding: 0px 25px;
 
+                @media #{$mobile}{
+                    float: none;
+                }
+
                 .views-field-field-orgphoto img{
                     width: 135px;
                     height:135px;

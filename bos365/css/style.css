@@ -6572,7 +6572,9 @@ h3 {
 .header-wrapper {
   margin-bottom: 20px; }
   .header-wrapper .has-hero {
-    height: 425px; }
+    height: 425px;
+    background-position: center;
+    background-size: cover; }
     .header-wrapper .has-hero .navbar-header {
       height: 425px; }
   .header-wrapper .no-hero {
@@ -6605,7 +6607,7 @@ h3 {
         margin-top: 45px; } }
   @media screen and (max-width: 767px) {
     .header-wrapper .headerHero {
-      margin-top: 95px; } }
+      margin-top: 125px; } }
 
 .homepage-slider-block {
   text-transform: capitalize; }
@@ -6737,6 +6739,9 @@ h3 {
         width: auto !important;
         margin: 15px 25px;
         padding: 0px 25px; }
+        @media screen and (max-width: 767px) {
+          .main-container .block-views-blockorganisers-block-1 .view-organisers .views-view-grid .views-col {
+            float: none; } }
         .main-container .block-views-blockorganisers-block-1 .view-organisers .views-view-grid .views-col .views-field-field-orgphoto img {
           width: 135px;
           height: 135px;
@@ -6886,9 +6891,15 @@ li.mobile-enable {
     border-radius: 3px;
     background-color: #ffffff;
     border: solid 1px #ccc;
-    padding: 24.4px 19.8px 0px 31.8px;
+    padding: 24px 30px 0px 30px;
     overflow: hidden;
     margin-bottom: 28.3px; }
+  @media screen and (max-width: 767px) {
+    .upcoming-sessions .sponsor_logo {
+      margin-top: 20px; }
+      .upcoming-sessions .sponsor_logo img {
+        margin-left: auto;
+        margin-right: auto; } }
   .upcoming-sessions .heading {
     font-family: "Segoe UI", "Open Sans", Arial;
     font-size: 18px;
@@ -6908,6 +6919,9 @@ li.mobile-enable {
   .upcoming-sessions .resource-icons {
     text-align: right;
     margin-bottom: 10px; }
+    @media screen and (max-width: 767px) {
+      .upcoming-sessions .resource-icons {
+        margin-top: -40px; } }
     .upcoming-sessions .resource-icons a {
       border-radius: 0px;
       border: solid 0px #ccc;
