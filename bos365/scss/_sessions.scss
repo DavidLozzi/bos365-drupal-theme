@@ -213,7 +213,7 @@
         color: $gray-light;
         padding:0px;
         margin-bottom: 10px;
-        @media #{$mobile}{
+        @media #{$normal}{
             margin-top: 30px;
             display: block;
         }
@@ -256,66 +256,6 @@
             text-align: left;
             color: $link-color;
             font-size: 18px;
-        }
-    }
-
-    .speaker-details{
-        background-color:#eeeeee;
-        overflow:hidden;
-        margin-top: 25px;
-    
-        h2 {
-            text-align: center;
-            color: $gray;
-            margin-bottom: 25px;
-        }
-        .image{
-            border-radius:75px;
-            border:4px solid $white;
-            width:140px;
-            height:140px;
-            margin:auto;
-            overflow:hidden;
-            display: flex;
-            align-items: center;
-        }
-            
-        .name{	
-            font-family: $font-family-segoe;
-            font-size: 34px;
-            font-weight: 300;
-            text-align: center;
-            color: $gray-base;
-            margin:auto;
-        }
-        
-        .description{	
-            font-family: $font-family-segoe;
-            font-size: 18px;
-            font-weight: 300;
-            line-height: 1.78;
-            text-align: center;
-            color: $gray-base;
-            margin-top: 10px;
-            margin-bottom: 50px;
-        }
-
-    }
-    .socio-icons {
-        margin: 17px 0px 17px 0px;
-        text-align: center;
-        .icon-div{
-            background-color: $gray-base;
-            border-radius: 20px;
-            margin-right: 10px;
-            margin-left: 10px;
-            padding: 10px;
-            float:left;
-            line-height: 0;
-        }
-           
-        .icon-div svg path {
-           color: $white;
         }
     }
 

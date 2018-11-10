@@ -116,6 +116,22 @@
                 color: $white;
                 padding-left: 200px;
                 padding-right: 200px;
+                @media #{$wide}{
+                    font-size: 28px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+                
+                @media #{$normal}{
+                    font-size: 24px;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            
                 @media #{$mobile}{
                     font-size: 24px;
                     padding-left: 10px;
@@ -123,6 +139,7 @@
                     margin-left: 20px;
                     margin-right: 20px;
                 }
+
             }
 
             .slider-speaker{
@@ -160,6 +177,11 @@
             .slider-sponsor-logo{
                 @extend %sponsor-tile;
                 height: 80px;
+                
+                @media #{$normal}{
+                    height: 70px;
+                    margin-top: 20px;
+                }
             }
             .slider-more-details {
                 margin: auto;

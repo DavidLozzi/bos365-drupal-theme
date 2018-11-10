@@ -64,6 +64,9 @@
                 margin: 15px 25px;
                 padding: 0px 25px;
 
+                @media #{$normal}{
+                    padding: 10px;
+                }
                 @media #{$mobile}{
                     float: none;
                 }
@@ -130,14 +133,6 @@
              }
 
              .view-sponsors{
-                 .more-link.form-group
-                 {
-                     margin-top: 13px;
-                     a{
-                         @extend %blue-link-button;
-                     }
-                 }
-
                  .views-view-grid .views-col{
                      float: left;
                      width: auto !important;

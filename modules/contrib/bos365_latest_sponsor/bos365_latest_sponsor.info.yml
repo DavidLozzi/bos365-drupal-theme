@@ -1,0 +1,5 @@
+name: 'Latest Sponsors'
+description: 'Lists the unique latest sponsors from the latest sessions.'
+package: Bos365
+core: 8.x
+type: module

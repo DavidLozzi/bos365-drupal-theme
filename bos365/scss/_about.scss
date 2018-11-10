@@ -1,7 +1,7 @@
 .block-views-blockorganizer-bios-block-1 {
   background-color: $gray-lighter;
-  padding-left: 230px;
-  padding-right: 230px;
+  padding-left: $page-left-padding;
+  padding-right: $page-left-margin;
   display: inline-block;
   
   @media #{$mobile}{

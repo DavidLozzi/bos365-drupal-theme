@@ -12,11 +12,20 @@
         text-align: center;
         display: inline-block;
         max-width: 150px;
+        @media #{$normal}{
+            max-width: 125px;
+        }
     }
     &:hover img{
         -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
         filter: grayscale(100%) opacity(50%);
-    }   
+    }
+
+    @media #{$normal}{
+        width: 175px;
+        height: 175px;
+        margin: 0px 10px 20px 10px;
+    }
 }
 
 %blue-link-button{

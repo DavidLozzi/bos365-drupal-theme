@@ -122,7 +122,32 @@ h3 {
 }
 
 .container {
+  max-width: 100%;
+
   @media #{$mobile}{
     padding: 0px;
   }
+
+  @media #{$tablet}{
+    width: 100% !important;
+
+  }
+  
+  @media #{$normal}{
+    width: 100% !important;
+    
+  }
+  
+  @media #{$wide}{
+    width: 100% !important;
+    
+  }
+}
+
+.more-link
+{
+    margin-top: 13px;
+    a{
+        @extend %blue-link-button;
+    }
 }
