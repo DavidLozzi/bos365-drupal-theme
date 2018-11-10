@@ -1,0 +1,138 @@
+.speaker-details{
+  background-color: $gray-lighter;
+  overflow:hidden;
+  margin-top: 25px;
+
+  h2 {
+      text-align: center;
+      color: $gray;
+      margin-bottom: 25px;
+  }
+  .image{
+      border-radius:125px;
+      border:4px solid $white;
+      width:200px;
+      height:200px;
+      margin:auto;
+      overflow:hidden;
+      display: flex;
+      align-items: center;
+  }
+      
+  .name{	
+      font-family: $font-family-segoe;
+      font-size: 34px;
+      font-weight: 300;
+      text-align: center;
+      color: $gray-base;
+      margin:auto;
+  }
+  
+  .description{	
+      font-family: $font-family-segoe;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.78;
+      text-align: center;
+      color: $gray-base;
+      margin-top: 10px;
+      margin-bottom: 50px;
+  }
+
+}
+.socio-icons {
+  margin: 17px 0px 17px 0px;
+  text-align: center;
+  .icon-div{
+      background-color: $gray-base;
+      border-radius: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
+      padding: 10px;
+      float:left;
+      line-height: 0;
+  }
+     
+  .icon-div svg path {
+     color: $white;
+  }
+}
+
+// used on the session detail page
+.field--name-field-speaker {
+}
+
+.block-views-blockspeaker-past-sessions-block-1 {
+    padding-left: $page-left-padding;
+    padding-right: $page-left-padding;
+
+    @media #{$mobile}{
+        padding-left:$page-left-padding-mobile;
+        padding-right:$page-left-padding-mobile;
+    }
+
+    .block-title {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+#block-views-block-speakers-block-1 {
+    background-color: $gray-lighter;
+    padding-left: $page-left-padding;
+    padding-right: $page-left-padding;
+    padding-bottom: 20px;
+
+    @media screen and (max-width: 1400px) {
+        padding-left: $page-left-padding-mobile;
+        padding-right: $page-left-padding-mobile;
+    }
+    
+    .block-title {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .view-content {
+        text-align: center;
+
+        & > div {
+            display: inline-block;
+        }
+    }
+
+    .views-field {
+        background-color: $white;
+        width: 250px;
+        height: 250px;
+        border-radius: 3px;
+        border: solid 1px #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px 20px 20px;
+        
+        &:hover img{
+            -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+            filter: grayscale(100%) opacity(50%);
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        text-align: center;
+        a, a:active, a:visited, a:link {
+            text-decoration: none;
+        }
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        border: 2px solid $white;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
