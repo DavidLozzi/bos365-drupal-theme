@@ -2,6 +2,11 @@
   background-color: $gray-lighter;
   overflow:hidden;
   margin-top: 25px;
+  
+  @media #{$normal}{
+    padding-left:$page-left-padding-mobile;
+    padding-right:$page-left-padding-mobile;
+    }
 
   h2 {
       text-align: center;
@@ -66,7 +71,7 @@
     padding-left: $page-left-padding;
     padding-right: $page-left-padding;
 
-    @media #{$mobile}{
+    @media #{$normal}{
         padding-left:$page-left-padding-mobile;
         padding-right:$page-left-padding-mobile;
     }

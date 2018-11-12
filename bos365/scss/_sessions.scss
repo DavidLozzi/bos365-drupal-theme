@@ -32,7 +32,7 @@
 .block-views-blockupcoming-session-block-1 {
     padding-left:$page-left-padding;
     padding-right:$page-left-padding;
-    @media #{$mobile}{
+    @media #{$normal}{
         padding-left:$page-left-padding-mobile;
         padding-right:$page-left-padding-mobile;
     }
@@ -45,7 +45,7 @@
     background-color: $brand-secondary;
     padding-left:$page-left-padding;
     padding-right:$page-left-padding;
-    @media #{$mobile}{
+    @media #{$normal}{
         padding-left:$page-left-padding-mobile;
         padding-right:$page-left-padding-mobile;
     } 

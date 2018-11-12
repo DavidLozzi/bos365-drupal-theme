@@ -4,7 +4,7 @@
   padding-right: $page-left-margin;
   display: inline-block;
   
-  @media #{$mobile}{
+  @media #{$normal}{
     padding-left:$page-left-padding-mobile;
     padding-right:$page-left-padding-mobile;
   }
@@ -27,7 +27,7 @@
   background-color: $white;
 
   
-  @media #{$mobile}{
+  @media #{$normal}{
     display: block;
   }
 
@@ -41,7 +41,7 @@
     align-items: center;
     padding: 25px;
 
-    @media #{$mobile}{
+    @media #{$normal}{
       width: 100%;
     }
 
@@ -86,7 +86,7 @@
     font-size: 14px;
     line-height: 1.86;
 
-    @media #{$mobile}{
+    @media #{$normal}{
       width: 100%;
     }
 
