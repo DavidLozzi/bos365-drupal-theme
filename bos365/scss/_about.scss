@@ -3,6 +3,8 @@
   padding-left: $page-left-padding;
   padding-right: $page-left-margin;
   display: inline-block;
+  margin-left: -55px;
+  margin-right: -55px;
   
   @media #{$normal}{
     padding-left:$page-left-padding-mobile;

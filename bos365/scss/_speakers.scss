@@ -2,6 +2,8 @@
   background-color: $gray-lighter;
   overflow:hidden;
   margin-top: 25px;
+  margin-left: -55px;
+  margin-right: -55px;
   
   @media #{$normal}{
     padding-left:$page-left-padding-mobile;
@@ -87,6 +89,8 @@
     padding-left: $page-left-padding;
     padding-right: $page-left-padding;
     padding-bottom: 20px;
+    margin-left: -55px;
+    margin-right: -55px;
 
     @media screen and (max-width: 1400px) {
         padding-left: $page-left-padding-mobile;

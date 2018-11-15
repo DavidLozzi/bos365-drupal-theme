@@ -6781,7 +6781,9 @@ h3 {
     background-color: #eeeeee;
     margin-top: 20px;
     padding-bottom: 20px;
-    text-align: center; }
+    text-align: center;
+    margin-left: -55px;
+    margin-right: -55px; }
     .main-container .block-views-blockorganisers-block-1 .view-organisers {
       margin: 10px 20px; }
       .main-container .block-views-blockorganisers-block-1 .view-organisers .view-content {
@@ -6923,7 +6925,9 @@ li.mobile-enable {
 .block-views-blockpast-sessions-block-1 {
   background-color: #eeeeee;
   padding-left: 200px;
-  padding-right: 200px; }
+  padding-right: 200px;
+  margin-left: -55px;
+  margin-right: -55px; }
   @media screen and (max-width: 992px) {
     .block-views-blockpast-sessions-block-1 {
       padding-left: 20px;
@@ -7036,7 +7040,7 @@ li.mobile-enable {
 .session-details .label {
   text-transform: uppercase;
   font-family: "Segoe UI", "Open Sans", Arial;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 600;
   text-align: left;
   color: #777777;
@@ -7049,7 +7053,7 @@ li.mobile-enable {
 
 .session-details .value {
   font-family: "Segoe UI", "Open Sans", Arial;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   padding: 0px;
   color: #000; }
@@ -7139,7 +7143,9 @@ li.mobile-enable {
 .speaker-details {
   background-color: #eeeeee;
   overflow: hidden;
-  margin-top: 25px; }
+  margin-top: 25px;
+  margin-left: -55px;
+  margin-right: -55px; }
   @media screen and (max-width: 992px) {
     .speaker-details {
       padding-left: 20px;
@@ -7203,7 +7209,9 @@ li.mobile-enable {
   background-color: #eeeeee;
   padding-left: 200px;
   padding-right: 200px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  margin-left: -55px;
+  margin-right: -55px; }
   @media screen and (max-width: 1400px) {
     #block-views-block-speakers-block-1 {
       padding-left: 20px;
@@ -7308,7 +7316,9 @@ li.mobile-enable {
     margin: 10px auto; } }
 
 .block-views-blockall-sponsors-block-1 {
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  margin-left: -55px;
+  margin-right: -55px; }
 
 .sponsor-det .company-logo {
   margin-bottom: 40px;
@@ -7390,7 +7400,9 @@ li.mobile-enable {
   background-color: #eeeeee;
   padding-left: 200px;
   padding-right: 200px;
-  display: inline-block; }
+  display: inline-block;
+  margin-left: -55px;
+  margin-right: -55px; }
   @media screen and (max-width: 992px) {
     .block-views-blockorganizer-bios-block-1 {
       padding-left: 20px;

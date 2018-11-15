@@ -45,6 +45,9 @@
     background-color: $brand-secondary;
     padding-left:$page-left-padding;
     padding-right:$page-left-padding;
+    margin-left: -55px;
+    margin-right: -55px;
+
     @media #{$normal}{
         padding-left:$page-left-padding-mobile;
         padding-right:$page-left-padding-mobile;
@@ -207,7 +210,7 @@
     .label {
         text-transform:uppercase;
         font-family: $font-family-segoe;
-        font-size: 11px;
+        font-size: 16px;
         font-weight: 600;
         text-align: left;
         color: $gray-light;
@@ -221,7 +224,7 @@
 
     .value {
         font-family: $font-family-segoe;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 300;
         padding:0px;
         color: $gray-base;

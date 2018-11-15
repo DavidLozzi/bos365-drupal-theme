@@ -137,7 +137,7 @@
       <h2>Registration coming soon</h2>
     </div>
     {% else %}
-      {% if "now"|date('Y-m-d') < node.field_date.value|date('Y-m-d') %}
+      {% if "now"|date('Y-m-d') <= node.field_date.value|date('Y-m-d') %}
         <div class="eventbrite">
           <h2>Register</h2>
           <div class="description">You can join us in person or online!</div>
