@@ -12,7 +12,7 @@ use Drupal\Core\Database\Query\AlterableInterface;
 /**
  * Order sponsors by the related session.
  */
-function bos365_query_home_sponsors_alter(AlterableInterface $query) {
+/* function bos365_latest_sponsor_query_home_sponsors_alter(AlterableInterface $query) {
   $query->join('node__field_date', 'nfd', "field_sponsor_node_field_data.nid = nfd.entity_id AND nfd.deleted = '0'");
   $query->orderBy('nfd.field_date_value', 'DESC');
-}
+} */
