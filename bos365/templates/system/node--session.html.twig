@@ -116,7 +116,7 @@
       {% if node.field_sponsor.entity.field_url %}
         <div class="col-md-4 col-xs-12" >       
           <div class="label col-md-12">Sponsored By</div>
-          <div class="value col-md-12"><a href="{{ path('entity.node.canonical', {node: node.field_sponsor.entity.id}) }}"><img src="{{ file_url(node.field_sponsor.entity.field_logo.entity.uri.value) }}" alt="Sponsored by" /></a></div>
+          <div class="value col-md-12"><a href="{{ path('entity.node.canonical', {node: node.field_sponsor.entity.id}) }}"><img src="{{ file_url(node.field_sponsor.entity.field_logo.entity.uri.value) }}" alt="Sponsored by" style="width: 100%"/></a></div>
         </div>
       {% endif %}
     </div>
