@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap-sass": "^3.4.1",
+    "natives": "^1.1.6",
     "vinyl-ftp": "^0.6.1"
   },
   "devDependencies": {
